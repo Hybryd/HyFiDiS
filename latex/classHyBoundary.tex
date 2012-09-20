@@ -1,0 +1,113 @@
+\hypertarget{classHyBoundary}{
+\section{HyBoundary$<$ T $>$ Class Template Reference}
+\label{classHyBoundary}\index{HyBoundary@{HyBoundary}}
+}
+
+
+Define the border of the domain for a given problem. It is represented by a function, defined in the whole space, which value is positive inside the domain, 0 exactly on the boundary, and negative outside. This class is virtual.  
+
+
+
+
+{\ttfamily \#include $<$HyBoundary.hpp$>$}
+
+Inheritance diagram for HyBoundary$<$ T $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classHyBoundary}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classHyBoundary_aa8cbd9afcca0c5190d485da790a35cb5}{
+\hyperlink{classHyBoundary_aa8cbd9afcca0c5190d485da790a35cb5}{HyBoundary} ()}
+\label{classHyBoundary_aa8cbd9afcca0c5190d485da790a35cb5}
+
+\begin{DoxyCompactList}\small\item\em Default constructor of \hyperlink{classHyBoundary}{HyBoundary}. \item\end{DoxyCompactList}\item 
+\hyperlink{classHyBoundary_a7d47a3c2a01860fa91c754e049e620d5}{HyBoundary} (std::string pDescription)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{classHyBoundary}{HyBoundary}. \item\end{DoxyCompactList}\item 
+\hypertarget{classHyBoundary_ad57ad019c8982491f5bcd8270c05d8fc}{
+std::string {\bfseries getDescription} () const }
+\label{classHyBoundary_ad57ad019c8982491f5bcd8270c05d8fc}
+
+\item 
+double \hyperlink{classHyBoundary_a138c96a97075dc41eead25963c1bf785}{getBoundary} (\hyperlink{classHyPoint}{HyPoint}$<$ T $>$ \&pPoint)
+\begin{DoxyCompactList}\small\item\em Definition of the boundary. Positive inside the domain, 0 on the boundary, negative outside. \item\end{DoxyCompactList}\item 
+\hypertarget{classHyBoundary_aab7edbacd9ab3194cd1704132b040298}{
+virtual double {\bfseries getBoundary} (T pX, T pY, T pZ)=0}
+\label{classHyBoundary_aab7edbacd9ab3194cd1704132b040298}
+
+\item 
+\hyperlink{classHyBoundary}{HyBoundary}$<$ T $>$ \& \hyperlink{classHyBoundary_a0e9c5e3a7b5c161bd47e98ca0e265fc5}{operator=} (const \hyperlink{classHyBoundary}{HyBoundary}$<$ T $>$ \&pB)
+\begin{DoxyCompactList}\small\item\em operator= \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std::string \hyperlink{classHyBoundary_a0eeb51edf5863746b1f7dbc12c61b1c6}{aDescription}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$ class HyBoundary$<$ T $>$}
+
+Define the border of the domain for a given problem. It is represented by a function, defined in the whole space, which value is positive inside the domain, 0 exactly on the boundary, and negative outside. This class is virtual. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHyBoundary_a7d47a3c2a01860fa91c754e049e620d5}{
+\index{HyBoundary@{HyBoundary}!HyBoundary@{HyBoundary}}
+\index{HyBoundary@{HyBoundary}!HyBoundary@{HyBoundary}}
+\subsubsection[{HyBoundary}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf HyBoundary}$<$ T $>$::{\bf HyBoundary} (std::string {\em pDescription})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyBoundary_a7d47a3c2a01860fa91c754e049e620d5}
+
+
+Constructor of \hyperlink{classHyBoundary}{HyBoundary}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pDescription}]Brief description of the boundary. \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHyBoundary_a138c96a97075dc41eead25963c1bf785}{
+\index{HyBoundary@{HyBoundary}!getBoundary@{getBoundary}}
+\index{getBoundary@{getBoundary}!HyBoundary@{HyBoundary}}
+\subsubsection[{getBoundary}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ double {\bf HyBoundary}$<$ T $>$::getBoundary ({\bf HyPoint}$<$ T $>$ \& {\em pPoint})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyBoundary_a138c96a97075dc41eead25963c1bf785}
+
+
+Definition of the boundary. Positive inside the domain, 0 on the boundary, negative outside. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pPoint}]The point to evalutate. \end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classHyCircle_aed6e84c3e2e99b8f84aa1b723224f4c5}{HyCircle$<$ T $>$}, and \hyperlink{classHyRectangle_a881f7ed847a94d1af3ff4ff0d60ee516}{HyRectangle$<$ T $>$}.
+
+\hypertarget{classHyBoundary_a0e9c5e3a7b5c161bd47e98ca0e265fc5}{
+\index{HyBoundary@{HyBoundary}!operator=@{operator=}}
+\index{operator=@{operator=}!HyBoundary@{HyBoundary}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf HyBoundary}$<$ T $>$ \& {\bf HyBoundary}$<$ T $>$::operator= (const {\bf HyBoundary}$<$ T $>$ \& {\em pB})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyBoundary_a0e9c5e3a7b5c161bd47e98ca0e265fc5}
+
+
+operator= 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pB}]The \hyperlink{classHyBoundary}{HyBoundary} to copy. \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHyBoundary_a0eeb51edf5863746b1f7dbc12c61b1c6}{
+\index{HyBoundary@{HyBoundary}!aDescription@{aDescription}}
+\index{aDescription@{aDescription}!HyBoundary@{HyBoundary}}
+\subsubsection[{aDescription}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ std::string {\bf HyBoundary}$<$ T $>$::{\bf aDescription}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyBoundary_a0eeb51edf5863746b1f7dbc12c61b1c6}
+A brief description of the boundary 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{HyBoundary_8hpp}{HyBoundary.hpp}\item 
+\hyperlink{HyBoundary_8ipp}{HyBoundary.ipp}\end{DoxyCompactItemize}

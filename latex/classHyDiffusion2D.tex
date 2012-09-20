@@ -1,0 +1,241 @@
+\hypertarget{classHyDiffusion2D}{
+\section{HyDiffusion2D$<$ T $>$ Class Template Reference}
+\label{classHyDiffusion2D}\index{HyDiffusion2D@{HyDiffusion2D}}
+}
+
+
+Diffusion equation in 2 dimensions: $ \partial_t u - \kappa\Delta u = f $.  
+
+
+
+
+{\ttfamily \#include $<$HyDiffusion2D.hpp$>$}
+
+Inheritance diagram for HyDiffusion2D$<$ T $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classHyDiffusion2D}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classHyDiffusion2D_aab727755e5fd2fe558b1405b7286d80c}{
+\hyperlink{classHyDiffusion2D_aab727755e5fd2fe558b1405b7286d80c}{HyDiffusion2D} ()}
+\label{classHyDiffusion2D_aab727755e5fd2fe558b1405b7286d80c}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{classHyDiffusion2D_a3e7c4a79c2a9bc64749caf72c876719c}{
+{\bfseries HyDiffusion2D} (\hyperlink{classHyDomain}{HyDomain}$<$ T $>$ \&pDomain, \hyperlink{classHyBoundary}{HyBoundary}$<$ T $>$ \&pBoundary, \hyperlink{classHyMesh2D}{HyMesh2D}$<$ T $>$ \&pMesh, std::string \&pDescription, long int pTmax, unsigned long int pNbTimeStep=1, double pK=1)}
+\label{classHyDiffusion2D_a3e7c4a79c2a9bc64749caf72c876719c}
+
+\item 
+\hypertarget{classHyDiffusion2D_a6bb3997b896afa965dab984f39e85adb}{
+std::vector$<$ Eigen::VectorXd $>$ {\bfseries getEvolution} () const }
+\label{classHyDiffusion2D_a6bb3997b896afa965dab984f39e85adb}
+
+\item 
+\hypertarget{classHyDiffusion2D_a8a6f0ed50d0e2523a6998457b4607b17}{
+void \hyperlink{classHyDiffusion2D_a8a6f0ed50d0e2523a6998457b4607b17}{build} ()}
+\label{classHyDiffusion2D_a8a6f0ed50d0e2523a6998457b4607b17}
+
+\begin{DoxyCompactList}\small\item\em Fills the matrix A and the vectors F and G. \item\end{DoxyCompactList}\item 
+\hypertarget{classHyDiffusion2D_a7f66b2d5a7ddafa4da4d100219ff2073}{
+void {\bfseries buildTheta} (double pTheta)}
+\label{classHyDiffusion2D_a7f66b2d5a7ddafa4da4d100219ff2073}
+
+\item 
+\hypertarget{classHyDiffusion2D_a8d6bbc8e9c91c4eaf7215e14d6504af6}{
+void \hyperlink{classHyDiffusion2D_a8d6bbc8e9c91c4eaf7215e14d6504af6}{solve} ()}
+\label{classHyDiffusion2D_a8d6bbc8e9c91c4eaf7215e14d6504af6}
+
+\begin{DoxyCompactList}\small\item\em Solve the problem using the explicit method by default. \item\end{DoxyCompactList}\item 
+\hypertarget{classHyDiffusion2D_a68af2c8f0a1fa5de0589997c8287b8db}{
+void \hyperlink{classHyDiffusion2D_a68af2c8f0a1fa5de0589997c8287b8db}{solveExplicit} ()}
+\label{classHyDiffusion2D_a68af2c8f0a1fa5de0589997c8287b8db}
+
+\begin{DoxyCompactList}\small\item\em Solve the problem using the explicit method. \item\end{DoxyCompactList}\item 
+\hypertarget{classHyDiffusion2D_ae5b91bf3392c29384651599d8d115284}{
+void {\bfseries solveTheta} ()}
+\label{classHyDiffusion2D_ae5b91bf3392c29384651599d8d115284}
+
+\item 
+void \hyperlink{classHyDiffusion2D_a88da599f17d9a34ee45526cf8beffa54}{displaySolutionGP} (std::ostream \&out, unsigned long int t)
+\begin{DoxyCompactList}\small\item\em Display the solution for gnuplot, using the pattern \char`\"{}X Y VALUE\char`\"{} (to display in 3D). \item\end{DoxyCompactList}\item 
+double \hyperlink{classHyDiffusion2D_a0df1a7fbe0b6a50d85a74c655f32cfb2}{g} (\hyperlink{classHyPoint}{HyPoint}$<$ T $>$ pPoint)
+\begin{DoxyCompactList}\small\item\em Dirichlet condition. \item\end{DoxyCompactList}\item 
+double \hyperlink{classHyDiffusion2D_ae09f11a685b241e42b466d023b1d23fc}{g} (T pX, T pY, T pZ)
+\begin{DoxyCompactList}\small\item\em Dirichlet condition. \item\end{DoxyCompactList}\item 
+double \hyperlink{classHyDiffusion2D_a40c7ec43e3b5e0d1d1d518dabd3a2299}{f} (\hyperlink{classHyPoint}{HyPoint}$<$ T $>$ pPoint)
+\begin{DoxyCompactList}\small\item\em The function f of the Diffusion equation. \item\end{DoxyCompactList}\item 
+double \hyperlink{classHyDiffusion2D_aea84648a2e7b70f9eda67ef603102a11}{f} (T pX, T pY)
+\begin{DoxyCompactList}\small\item\em The function f of the Diffusion equation. \item\end{DoxyCompactList}\item 
+double \hyperlink{classHyDiffusion2D_a07622cf68cbd0571101807eedcb3a76d}{initialCondition} (\hyperlink{classHyPoint}{HyPoint}$<$ T $>$ pPoint)
+\begin{DoxyCompactList}\small\item\em The initial condition. \item\end{DoxyCompactList}\item 
+double \hyperlink{classHyDiffusion2D_ae04d50ba468b2338bbf4d134d43ffe49}{initialCondition} (T pX, T pY)
+\begin{DoxyCompactList}\small\item\em The initial condition. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+long int \hyperlink{classHyDiffusion2D_a484433cb70b279d460ae7ad99c692b44}{aTmax}
+\item 
+unsigned long int \hyperlink{classHyDiffusion2D_a3fdb9b91352535d51ab737c8e2bbb096}{aNbTimeStep}
+\item 
+double \hyperlink{classHyDiffusion2D_adb712ad9fbd8ff8ba019bd0a5c80edb4}{aK}
+\item 
+Eigen::SparseMatrix$<$ T $>$ \hyperlink{classHyDiffusion2D_a3826559f9dade45395fc0bb046fbab9c}{aMatrixB}
+\item 
+std::vector$<$ Eigen::VectorXd $>$ \hyperlink{classHyDiffusion2D_aaba7bf56f39cc0caa9bcf8fa4b2f30f0}{aEvolution}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$ class HyDiffusion2D$<$ T $>$}
+
+Diffusion equation in 2 dimensions: $ \partial_t u - \kappa\Delta u = f $. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classHyDiffusion2D_a88da599f17d9a34ee45526cf8beffa54}{
+\index{HyDiffusion2D@{HyDiffusion2D}!displaySolutionGP@{displaySolutionGP}}
+\index{displaySolutionGP@{displaySolutionGP}!HyDiffusion2D@{HyDiffusion2D}}
+\subsubsection[{displaySolutionGP}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf HyDiffusion2D}$<$ T $>$::displaySolutionGP (std::ostream \& {\em out}, \/  unsigned long int {\em t})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyDiffusion2D_a88da599f17d9a34ee45526cf8beffa54}
+
+
+Display the solution for gnuplot, using the pattern \char`\"{}X Y VALUE\char`\"{} (to display in 3D). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]The ostream to write in \item[{\em t}]The time of evolution \end{DoxyParams}
+\hypertarget{classHyDiffusion2D_aea84648a2e7b70f9eda67ef603102a11}{
+\index{HyDiffusion2D@{HyDiffusion2D}!f@{f}}
+\index{f@{f}!HyDiffusion2D@{HyDiffusion2D}}
+\subsubsection[{f}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ double {\bf HyDiffusion2D}$<$ T $>$::f (T {\em pX}, \/  T {\em pY})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyDiffusion2D_aea84648a2e7b70f9eda67ef603102a11}
+
+
+The function f of the Diffusion equation. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pX,pY}]The coordinate of evaluation \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of f(pX,pY) 
+\end{DoxyReturn}
+\hypertarget{classHyDiffusion2D_a40c7ec43e3b5e0d1d1d518dabd3a2299}{
+\index{HyDiffusion2D@{HyDiffusion2D}!f@{f}}
+\index{f@{f}!HyDiffusion2D@{HyDiffusion2D}}
+\subsubsection[{f}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ double {\bf HyDiffusion2D}$<$ T $>$::f ({\bf HyPoint}$<$ T $>$ {\em pPoint})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyDiffusion2D_a40c7ec43e3b5e0d1d1d518dabd3a2299}
+
+
+The function f of the Diffusion equation. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pPoint}]The point of evaluation \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of f(pPoint) 
+\end{DoxyReturn}
+\hypertarget{classHyDiffusion2D_ae09f11a685b241e42b466d023b1d23fc}{
+\index{HyDiffusion2D@{HyDiffusion2D}!g@{g}}
+\index{g@{g}!HyDiffusion2D@{HyDiffusion2D}}
+\subsubsection[{g}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ double {\bf HyDiffusion2D}$<$ T $>$::g (T {\em pX}, \/  T {\em pY}, \/  T {\em pZ})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyDiffusion2D_ae09f11a685b241e42b466d023b1d23fc}
+
+
+Dirichlet condition. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pX,pY,pZ}]The coordinates of evaluation \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the Dirichlet condition for the given point (pX,pY,pZ) 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classHyProblem}{HyProblem$<$ T $>$}.
+
+\hypertarget{classHyDiffusion2D_a0df1a7fbe0b6a50d85a74c655f32cfb2}{
+\index{HyDiffusion2D@{HyDiffusion2D}!g@{g}}
+\index{g@{g}!HyDiffusion2D@{HyDiffusion2D}}
+\subsubsection[{g}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ double {\bf HyDiffusion2D}$<$ T $>$::g ({\bf HyPoint}$<$ T $>$ {\em pPoint})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyDiffusion2D_a0df1a7fbe0b6a50d85a74c655f32cfb2}
+
+
+Dirichlet condition. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pPoint}]The point to evaluate \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the Dirichlet condition for the given point 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classHyProblem_a5d3b78c69811136e74e9fc9232cc110b}{HyProblem$<$ T $>$}.
+
+\hypertarget{classHyDiffusion2D_ae04d50ba468b2338bbf4d134d43ffe49}{
+\index{HyDiffusion2D@{HyDiffusion2D}!initialCondition@{initialCondition}}
+\index{initialCondition@{initialCondition}!HyDiffusion2D@{HyDiffusion2D}}
+\subsubsection[{initialCondition}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ double {\bf HyDiffusion2D}$<$ T $>$::initialCondition (T {\em pX}, \/  T {\em pY})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyDiffusion2D_ae04d50ba468b2338bbf4d134d43ffe49}
+
+
+The initial condition. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pX,pY}]The coordinate of evaluation \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of f(pX,pY) 
+\end{DoxyReturn}
+\hypertarget{classHyDiffusion2D_a07622cf68cbd0571101807eedcb3a76d}{
+\index{HyDiffusion2D@{HyDiffusion2D}!initialCondition@{initialCondition}}
+\index{initialCondition@{initialCondition}!HyDiffusion2D@{HyDiffusion2D}}
+\subsubsection[{initialCondition}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ double {\bf HyDiffusion2D}$<$ T $>$::initialCondition ({\bf HyPoint}$<$ T $>$ {\em pPoint})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyDiffusion2D_a07622cf68cbd0571101807eedcb3a76d}
+
+
+The initial condition. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pPoint}]The point of evaluation \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of f(pPoint) 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHyDiffusion2D_aaba7bf56f39cc0caa9bcf8fa4b2f30f0}{
+\index{HyDiffusion2D@{HyDiffusion2D}!aEvolution@{aEvolution}}
+\index{aEvolution@{aEvolution}!HyDiffusion2D@{HyDiffusion2D}}
+\subsubsection[{aEvolution}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std::vector$<$Eigen::VectorXd$>$ {\bf HyDiffusion2D}$<$ T $>$::{\bf aEvolution}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyDiffusion2D_aaba7bf56f39cc0caa9bcf8fa4b2f30f0}
+The set of all solution for each time step \hypertarget{classHyDiffusion2D_adb712ad9fbd8ff8ba019bd0a5c80edb4}{
+\index{HyDiffusion2D@{HyDiffusion2D}!aK@{aK}}
+\index{aK@{aK}!HyDiffusion2D@{HyDiffusion2D}}
+\subsubsection[{aK}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ double {\bf HyDiffusion2D}$<$ T $>$::{\bf aK}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyDiffusion2D_adb712ad9fbd8ff8ba019bd0a5c80edb4}
+The diffusion coefficient \hypertarget{classHyDiffusion2D_a3826559f9dade45395fc0bb046fbab9c}{
+\index{HyDiffusion2D@{HyDiffusion2D}!aMatrixB@{aMatrixB}}
+\index{aMatrixB@{aMatrixB}!HyDiffusion2D@{HyDiffusion2D}}
+\subsubsection[{aMatrixB}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ Eigen::SparseMatrix$<$T$>$ {\bf HyDiffusion2D}$<$ T $>$::{\bf aMatrixB}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyDiffusion2D_a3826559f9dade45395fc0bb046fbab9c}
+The matrix B for the theta method ( A x(n+1) = B x(n) + F + G ) \hypertarget{classHyDiffusion2D_a3fdb9b91352535d51ab737c8e2bbb096}{
+\index{HyDiffusion2D@{HyDiffusion2D}!aNbTimeStep@{aNbTimeStep}}
+\index{aNbTimeStep@{aNbTimeStep}!HyDiffusion2D@{HyDiffusion2D}}
+\subsubsection[{aNbTimeStep}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ unsigned long int {\bf HyDiffusion2D}$<$ T $>$::{\bf aNbTimeStep}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyDiffusion2D_a3fdb9b91352535d51ab737c8e2bbb096}
+The number of temporal steps \hypertarget{classHyDiffusion2D_a484433cb70b279d460ae7ad99c692b44}{
+\index{HyDiffusion2D@{HyDiffusion2D}!aTmax@{aTmax}}
+\index{aTmax@{aTmax}!HyDiffusion2D@{HyDiffusion2D}}
+\subsubsection[{aTmax}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ long int {\bf HyDiffusion2D}$<$ T $>$::{\bf aTmax}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyDiffusion2D_a484433cb70b279d460ae7ad99c692b44}
+The maximal time 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{HyDiffusion2D_8hpp}{HyDiffusion2D.hpp}\item 
+\hyperlink{HyDiffusion2D_8ipp}{HyDiffusion2D.ipp}\end{DoxyCompactItemize}

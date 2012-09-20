@@ -1,0 +1,90 @@
+\hypertarget{classHyCircle}{
+\section{HyCircle$<$ T $>$ Class Template Reference}
+\label{classHyCircle}\index{HyCircle@{HyCircle}}
+}
+Inheritance diagram for HyCircle$<$ T $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classHyCircle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classHyCircle_adc55ea1795d45073c90c462bda267e6f}{
+{\bfseries HyCircle} (double pRadius, \hyperlink{classHyPoint}{HyPoint}$<$ T $>$ \&pP)}
+\label{classHyCircle_adc55ea1795d45073c90c462bda267e6f}
+
+\item 
+\hypertarget{classHyCircle_aa730543a6c7b464024fc530cf49e3c28}{
+double {\bfseries getRadius} ()}
+\label{classHyCircle_aa730543a6c7b464024fc530cf49e3c28}
+
+\item 
+\hypertarget{classHyCircle_a06295a19bea9a4afef499d10b7edb5fd}{
+\hyperlink{classHyPoint}{HyPoint}$<$ T $>$ \& {\bfseries getCenter} ()}
+\label{classHyCircle_a06295a19bea9a4afef499d10b7edb5fd}
+
+\item 
+\hypertarget{classHyCircle_a47d49ab084e13d1af2f6b8b7d8d3fdc0}{
+void {\bfseries setRadius} (double pRadius)}
+\label{classHyCircle_a47d49ab084e13d1af2f6b8b7d8d3fdc0}
+
+\item 
+\hypertarget{classHyCircle_a69ada2f6b472a1f1f7ecefa0d94210ec}{
+void {\bfseries setCenter} (\hyperlink{classHyPoint}{HyPoint}$<$ T $>$ \&pCenter)}
+\label{classHyCircle_a69ada2f6b472a1f1f7ecefa0d94210ec}
+
+\item 
+double \hyperlink{classHyCircle_aed6e84c3e2e99b8f84aa1b723224f4c5}{getBoundary} (\hyperlink{classHyPoint}{HyPoint}$<$ T $>$ \&pPoint)
+\begin{DoxyCompactList}\small\item\em Definition of the boundary. Positive inside the domain, 0 on the boundary, negative outside. \item\end{DoxyCompactList}\item 
+\hypertarget{classHyCircle_a08ababcaa26c11288e66a66a3d0e7f38}{
+double {\bfseries getBoundary} (T pX, T pY, T pZ)}
+\label{classHyCircle_a08ababcaa26c11288e66a66a3d0e7f38}
+
+\item 
+\hypertarget{classHyCircle_aeed0b7d097fbd97cfe87c8f7dc4e0b52}{
+\hyperlink{classHyCircle}{HyCircle}$<$ T $>$ \& {\bfseries operator=} (const \hyperlink{classHyCircle}{HyCircle}$<$ T $>$ \&pC)}
+\label{classHyCircle_aeed0b7d097fbd97cfe87c8f7dc4e0b52}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classHyCircle_a7df9d0c4404401ba9f661aad0bd7bc6e}{
+double {\bfseries aRadius}}
+\label{classHyCircle_a7df9d0c4404401ba9f661aad0bd7bc6e}
+
+\item 
+\hypertarget{classHyCircle_adf84a8e946e0fb915d313ba0051c5b23}{
+\hyperlink{classHyPoint}{HyPoint}$<$ T $>$ {\bfseries aCenter}}
+\label{classHyCircle_adf84a8e946e0fb915d313ba0051c5b23}
+
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$typename T$>$ class HyCircle$<$ T $>$}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHyCircle_aed6e84c3e2e99b8f84aa1b723224f4c5}{
+\index{HyCircle@{HyCircle}!getBoundary@{getBoundary}}
+\index{getBoundary@{getBoundary}!HyCircle@{HyCircle}}
+\subsubsection[{getBoundary}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ double {\bf HyCircle}$<$ T $>$::getBoundary ({\bf HyPoint}$<$ T $>$ \& {\em pPoint})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyCircle_aed6e84c3e2e99b8f84aa1b723224f4c5}
+
+
+Definition of the boundary. Positive inside the domain, 0 on the boundary, negative outside. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pPoint}]The point to evalutate. \end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classHyBoundary_a138c96a97075dc41eead25963c1bf785}{HyBoundary$<$ T $>$}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+HyCircle.hpp\item 
+HyCircle.ipp\end{DoxyCompactItemize}

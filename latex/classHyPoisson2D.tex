@@ -1,0 +1,116 @@
+\hypertarget{classHyPoisson2D}{
+\section{HyPoisson2D$<$ T $>$ Class Template Reference}
+\label{classHyPoisson2D}\index{HyPoisson2D@{HyPoisson2D}}
+}
+
+
+Poisson equation in 2 dimensions: $ \Delta u = f $.  
+
+
+
+
+{\ttfamily \#include $<$HyPoisson2D.hpp$>$}
+
+Inheritance diagram for HyPoisson2D$<$ T $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classHyPoisson2D}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classHyPoisson2D_a1ce5db0977faea87271b5c48c89121bc}{
+\hyperlink{classHyPoisson2D_a1ce5db0977faea87271b5c48c89121bc}{HyPoisson2D} ()}
+\label{classHyPoisson2D_a1ce5db0977faea87271b5c48c89121bc}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{classHyPoisson2D_a090399fc99e38625d92397aae07d5732}{
+{\bfseries HyPoisson2D} (\hyperlink{classHyDomain}{HyDomain}$<$ T $>$ \&pDomain, \hyperlink{classHyBoundary}{HyBoundary}$<$ T $>$ \&pBoundary, \hyperlink{classHyMesh2D}{HyMesh2D}$<$ T $>$ \&pMesh, std::string \&pDescription)}
+\label{classHyPoisson2D_a090399fc99e38625d92397aae07d5732}
+
+\item 
+\hypertarget{classHyPoisson2D_a4b5fa83627d8a1ec9716888d69217034}{
+void \hyperlink{classHyPoisson2D_a4b5fa83627d8a1ec9716888d69217034}{build} ()}
+\label{classHyPoisson2D_a4b5fa83627d8a1ec9716888d69217034}
+
+\begin{DoxyCompactList}\small\item\em Fills the matrix A and the vectors F and G. \item\end{DoxyCompactList}\item 
+\hypertarget{classHyPoisson2D_a905070be03612344705d81e72759ba32}{
+void {\bfseries solve} ()}
+\label{classHyPoisson2D_a905070be03612344705d81e72759ba32}
+
+\item 
+double \hyperlink{classHyPoisson2D_a9c27e90e3abb3a6ebe5d6b3274412e7a}{g} (\hyperlink{classHyPoint}{HyPoint}$<$ T $>$ pPoint)
+\begin{DoxyCompactList}\small\item\em The Dirichlet condition on the boundary. \item\end{DoxyCompactList}\item 
+\hypertarget{classHyPoisson2D_a26b5243fcf822a4009abeb72fb8cb01d}{
+double {\bfseries g} (T pX, T pY, T pZ)}
+\label{classHyPoisson2D_a26b5243fcf822a4009abeb72fb8cb01d}
+
+\item 
+double \hyperlink{classHyPoisson2D_ace05fcef4dbe0fe29c1357f7b0eeed23}{f} (\hyperlink{classHyPoint}{HyPoint}$<$ T $>$ pPoint)
+\begin{DoxyCompactList}\small\item\em The function f. \item\end{DoxyCompactList}\item 
+double \hyperlink{classHyPoisson2D_a8d4e172777a6adaa792d61f86b480e08}{f} (T pX, T pY)
+\begin{DoxyCompactList}\small\item\em The function f. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$ class HyPoisson2D$<$ T $>$}
+
+Poisson equation in 2 dimensions: $ \Delta u = f $. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classHyPoisson2D_a8d4e172777a6adaa792d61f86b480e08}{
+\index{HyPoisson2D@{HyPoisson2D}!f@{f}}
+\index{f@{f}!HyPoisson2D@{HyPoisson2D}}
+\subsubsection[{f}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ double {\bf HyPoisson2D}$<$ T $>$::f (T {\em pX}, \/  T {\em pY})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyPoisson2D_a8d4e172777a6adaa792d61f86b480e08}
+
+
+The function f. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pX,pY}]The coordinate of evaluation \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of f(pX,pY) 
+\end{DoxyReturn}
+\hypertarget{classHyPoisson2D_ace05fcef4dbe0fe29c1357f7b0eeed23}{
+\index{HyPoisson2D@{HyPoisson2D}!f@{f}}
+\index{f@{f}!HyPoisson2D@{HyPoisson2D}}
+\subsubsection[{f}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ double {\bf HyPoisson2D}$<$ T $>$::f ({\bf HyPoint}$<$ T $>$ {\em pPoint})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyPoisson2D_ace05fcef4dbe0fe29c1357f7b0eeed23}
+
+
+The function f. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pPoint}]The point of evaluation \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of f(pPoint) 
+\end{DoxyReturn}
+\hypertarget{classHyPoisson2D_a9c27e90e3abb3a6ebe5d6b3274412e7a}{
+\index{HyPoisson2D@{HyPoisson2D}!g@{g}}
+\index{g@{g}!HyPoisson2D@{HyPoisson2D}}
+\subsubsection[{g}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ double {\bf HyPoisson2D}$<$ T $>$::g ({\bf HyPoint}$<$ T $>$ {\em pPoint})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyPoisson2D_a9c27e90e3abb3a6ebe5d6b3274412e7a}
+
+
+The Dirichlet condition on the boundary. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pPoint}]The point of evaluation \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the Dirichlet condition on pPoint 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classHyProblem_a5d3b78c69811136e74e9fc9232cc110b}{HyProblem$<$ T $>$}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{HyPoisson2D_8hpp}{HyPoisson2D.hpp}\item 
+\hyperlink{HyPoisson2D_8ipp}{HyPoisson2D.ipp}\end{DoxyCompactItemize}

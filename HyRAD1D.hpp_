@@ -1,0 +1,52 @@
+#ifndef RAD1D_HPP
+#define RAD1D_HPP
+
+
+/*!
+* \file   HyRAD1D.hpp
+* \brief  Header file of HyRAD1D class.
+*
+*/
+
+
+#include <string>
+#include "HyBoundary.hpp"
+#include "HyMatrix.hpp"
+#include "HyMesh1D.hpp"
+#include "HyProblem.hpp"
+#include "HySetPoints.hpp"
+#include "HyVector.hpp"
+
+
+
+
+/*!
+*
+* \class HyPoisson2D
+* \brief Poisson equation in 2 dimension: \f$ \Delta u = f \f$
+*
+* 
+*/
+
+template <typename T>
+class HyPoisson2D : public HyProblem<T>
+{
+protected:
+//  HyVector<T> aF;
+public:
+  HyPoisson2D();
+  HyPoisson2D(HyBoundary<T> & pBoundary, std::string & pDescription, HyMesh2D<T> & pMesh );
+  void build();
+  //HyVector<T>									& getF()						{return aF;}
+
+  double f(HyPoint<T> pPoint);
+	double f(T pX, T pY);
+  
+};
+
+template <typename T>
+std::ostream & operator<<(std::ostream & out, HyPoisson2D<T> pProb);
+
+#include "HyPoisson2D.ipp"
+
+#endif

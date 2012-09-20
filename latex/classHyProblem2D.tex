@@ -1,0 +1,293 @@
+\hypertarget{classHyProblem2D}{
+\section{HyProblem2D$<$ T $>$ Class Template Reference}
+\label{classHyProblem2D}\index{HyProblem2D@{HyProblem2D}}
+}
+Inheritance diagram for HyProblem2D$<$ T $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classHyProblem2D}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHyProblem2D_a116bb99c93f87c2c7446f27eaff92827}{HyProblem2D} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{classHyProblem2D_a8de2354be8948a704b063bddfc530b62}{HyProblem2D} (\hyperlink{classHyBoundary2D}{HyBoundary2D}$<$ T $>$ \&pBoundary, std::string \&pDescription, \hyperlink{classHyMesh2D}{HyMesh2D}$<$ T $>$ \&pMesh)
+\begin{DoxyCompactList}\small\item\em Constructor. Initializes the matrix and the vectors. \item\end{DoxyCompactList}\item 
+\hypertarget{classHyProblem2D_aa44cec625139bc2529dae74059a00525}{
+\hyperlink{classHyBoundary2D}{HyBoundary2D}$<$ T $>$ \& {\bfseries getBoundary} ()}
+\label{classHyProblem2D_aa44cec625139bc2529dae74059a00525}
+
+\item 
+\hypertarget{classHyProblem2D_a0a453e24682bc2628e0b4117aef21fff}{
+std::string \& {\bfseries getDescription} ()}
+\label{classHyProblem2D_a0a453e24682bc2628e0b4117aef21fff}
+
+\item 
+\hypertarget{classHyProblem2D_a16213d78793afe66dc02b894dd5c4e6f}{
+\hyperlink{classHyDomain2D}{HyDomain2D}$<$ T $>$ \& {\bfseries getDomain} ()}
+\label{classHyProblem2D_a16213d78793afe66dc02b894dd5c4e6f}
+
+\item 
+\hypertarget{classHyProblem2D_a84b8f50e257599f6ce09f05dbef48886}{
+\hyperlink{classHyMesh2D}{HyMesh2D}$<$ T $>$ \& {\bfseries getMesh} ()}
+\label{classHyProblem2D_a84b8f50e257599f6ce09f05dbef48886}
+
+\item 
+\hypertarget{classHyProblem2D_a10c4a73b732021245ba93f1ba806167a}{
+\hyperlink{classHySetPoints}{HySetPoints}$<$ T $>$ \& {\bfseries getOmegaIn} ()}
+\label{classHyProblem2D_a10c4a73b732021245ba93f1ba806167a}
+
+\item 
+\hypertarget{classHyProblem2D_a9a9b10bfb207c678a75586a7d5f8acf0}{
+\hyperlink{classHySetPoints}{HySetPoints}$<$ T $>$ \& {\bfseries getOmegaOut} ()}
+\label{classHyProblem2D_a9a9b10bfb207c678a75586a7d5f8acf0}
+
+\item 
+\hypertarget{classHyProblem2D_ae7daa17f2a4ca57cf61acaa4c2c41a3a}{
+\hyperlink{classHySetPoints}{HySetPoints}$<$ T $>$ \& {\bfseries getGammaIn} ()}
+\label{classHyProblem2D_ae7daa17f2a4ca57cf61acaa4c2c41a3a}
+
+\item 
+\hypertarget{classHyProblem2D_aead003139eb289fdf4e4ce1bf6aba2e9}{
+\hyperlink{classHySetPoints}{HySetPoints}$<$ T $>$ \& {\bfseries getGammaOut} ()}
+\label{classHyProblem2D_aead003139eb289fdf4e4ce1bf6aba2e9}
+
+\item 
+\hypertarget{classHyProblem2D_a4153c020012fb9bccc2dee03c9047dd0}{
+\hyperlink{classHyMatrix}{HyMatrix}$<$ T $>$ \& {\bfseries getMatrix} ()}
+\label{classHyProblem2D_a4153c020012fb9bccc2dee03c9047dd0}
+
+\item 
+\hypertarget{classHyProblem2D_a40856d8fe948987400d0e2884fef2e14}{
+\hyperlink{classHyVector}{HyVector}$<$ T $>$ \& {\bfseries getX} ()}
+\label{classHyProblem2D_a40856d8fe948987400d0e2884fef2e14}
+
+\item 
+\hypertarget{classHyProblem2D_aa060a4f6d1e4c050dc3c46dd12d26eae}{
+\hyperlink{classHyVector}{HyVector}$<$ T $>$ \& {\bfseries getF} ()}
+\label{classHyProblem2D_aa060a4f6d1e4c050dc3c46dd12d26eae}
+
+\item 
+\hypertarget{classHyProblem2D_a1e6b6d26e0f161092bf1762f31d06054}{
+\hyperlink{classHyVector}{HyVector}$<$ T $>$ \& {\bfseries getG} ()}
+\label{classHyProblem2D_a1e6b6d26e0f161092bf1762f31d06054}
+
+\item 
+\hypertarget{classHyProblem2D_a86e8d77a1d0050784b29e0865a18cbc0}{
+void {\bfseries applyBoundary} ()}
+\label{classHyProblem2D_a86e8d77a1d0050784b29e0865a18cbc0}
+
+\item 
+\hypertarget{classHyProblem2D_ae33f9f4c438dce2e6ecfd5946a3cb2a0}{
+void \hyperlink{classHyProblem2D_ae33f9f4c438dce2e6ecfd5946a3cb2a0}{applySolution} ()}
+\label{classHyProblem2D_ae33f9f4c438dce2e6ecfd5946a3cb2a0}
+
+\begin{DoxyCompactList}\small\item\em Set the Z coordinate of each point of the mesh to the corresponding value in the solution. \item\end{DoxyCompactList}\item 
+\hypertarget{classHyProblem2D_a8cea7c089cabc5321631f97277dc0c68}{
+void \hyperlink{classHyProblem2D_a8cea7c089cabc5321631f97277dc0c68}{build} ()}
+\label{classHyProblem2D_a8cea7c089cabc5321631f97277dc0c68}
+
+\begin{DoxyCompactList}\small\item\em Fills the matrix A and the vectors F and G. \item\end{DoxyCompactList}\item 
+void \hyperlink{classHyProblem2D_a5a300ef6e1863ff9ed16fccb853e3e68}{projectionOnGamma} (\hyperlink{classHyPoint}{HyPoint}$<$ T $>$ \&pPointIn, \hyperlink{classHyPoint}{HyPoint}$<$ T $>$ \&pPointOut, double $\ast$ph, double $\ast$pu)
+\begin{DoxyCompactList}\small\item\em Finds the intersection between \mbox{[}pPointIn,pPointOut\mbox{]} and the boundary. \item\end{DoxyCompactList}\item 
+double \hyperlink{classHyProblem2D_a01c5fa60862c89ded1a64f019f24b866}{f} (\hyperlink{classHyPoint}{HyPoint}$<$ T $>$ pPoint)
+\begin{DoxyCompactList}\small\item\em The function f. \item\end{DoxyCompactList}\item 
+double \hyperlink{classHyProblem2D_ad12f53b0d42866701690300d520aa8b2}{f} (T pX, T pY)
+\begin{DoxyCompactList}\small\item\em The function f. \item\end{DoxyCompactList}\item 
+double \hyperlink{classHyProblem2D_a3b2b6264520c3f1ee7e475ea3785d26d}{g} (\hyperlink{classHyPoint}{HyPoint}$<$ T $>$ pPoint)
+\begin{DoxyCompactList}\small\item\em The Dirichlet condition on the boundary. \item\end{DoxyCompactList}\item 
+double \hyperlink{classHyProblem2D_acf8413f6d284ffaab2194a3dd43e56b8}{g} (T pX, T pY)
+\begin{DoxyCompactList}\small\item\em The Dirichlet condition on the boundary. \item\end{DoxyCompactList}\item 
+\hypertarget{classHyProblem2D_a52a12ef372b76e4af02c4804173116da}{
+void \hyperlink{classHyProblem2D_a52a12ef372b76e4af02c4804173116da}{display} (std::ostream \&out)}
+\label{classHyProblem2D_a52a12ef372b76e4af02c4804173116da}
+
+\begin{DoxyCompactList}\small\item\em Displays the object \hyperlink{classHyProblem2D}{HyProblem2D}. \item\end{DoxyCompactList}\item 
+\hypertarget{classHyProblem2D_aa86797cdbb7ff793ad0ff841cb5953e9}{
+void {\bfseries displaySolutionGP} ()}
+\label{classHyProblem2D_aa86797cdbb7ff793ad0ff841cb5953e9}
+
+\item 
+\hypertarget{classHyProblem2D_a7018328a7519bec1ca71f441a7dfc898}{
+void {\bfseries abc} ()}
+\label{classHyProblem2D_a7018328a7519bec1ca71f441a7dfc898}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classHyProblem2D_adecc876994518aae83c62b9805092c89}{
+\hyperlink{classHyBoundary2D}{HyBoundary2D}$<$ T $>$ \& {\bfseries aBoundary}}
+\label{classHyProblem2D_adecc876994518aae83c62b9805092c89}
+
+\item 
+\hypertarget{classHyProblem2D_ac42b9a8e1d274dea73bd0dc2c3be46a4}{
+std::string \& {\bfseries aDescription}}
+\label{classHyProblem2D_ac42b9a8e1d274dea73bd0dc2c3be46a4}
+
+\item 
+\hypertarget{classHyProblem2D_a41556271403865f195bcbe07d586342e}{
+\hyperlink{classHyDomain2D}{HyDomain2D}$<$ T $>$ \& {\bfseries aDomain}}
+\label{classHyProblem2D_a41556271403865f195bcbe07d586342e}
+
+\item 
+\hypertarget{classHyProblem2D_a8695c97bc09a975bcdf2206fdb75277c}{
+\hyperlink{classHyMesh2D}{HyMesh2D}$<$ T $>$ \& {\bfseries aMesh}}
+\label{classHyProblem2D_a8695c97bc09a975bcdf2206fdb75277c}
+
+\item 
+\hypertarget{classHyProblem2D_a753274226b8120ccc497034853c70c0d}{
+\hyperlink{classHySetPoints}{HySetPoints}$<$ T $>$ {\bfseries aOmegaIn}}
+\label{classHyProblem2D_a753274226b8120ccc497034853c70c0d}
+
+\item 
+\hypertarget{classHyProblem2D_acd74ad31ac9719ded3b204973350f9ec}{
+\hyperlink{classHySetPoints}{HySetPoints}$<$ T $>$ {\bfseries aOmegaOut}}
+\label{classHyProblem2D_acd74ad31ac9719ded3b204973350f9ec}
+
+\item 
+\hypertarget{classHyProblem2D_af203622263f537854478cf5cd7a243bc}{
+\hyperlink{classHySetPoints}{HySetPoints}$<$ T $>$ {\bfseries aGammaIn}}
+\label{classHyProblem2D_af203622263f537854478cf5cd7a243bc}
+
+\item 
+\hypertarget{classHyProblem2D_a4d7ec9d5d18d02f3cba21c3ff0a82aba}{
+\hyperlink{classHySetPoints}{HySetPoints}$<$ T $>$ {\bfseries aGammaOut}}
+\label{classHyProblem2D_a4d7ec9d5d18d02f3cba21c3ff0a82aba}
+
+\item 
+\hypertarget{classHyProblem2D_a20202936e2588218e6fae283eb7539a3}{
+\hyperlink{classHyMatrix}{HyMatrix}$<$ T $>$ {\bfseries aMatrix}}
+\label{classHyProblem2D_a20202936e2588218e6fae283eb7539a3}
+
+\item 
+\hypertarget{classHyProblem2D_af3d4f34732ec26825a2aa74a6fdd1f75}{
+\hyperlink{classHyVector}{HyVector}$<$ T $>$ {\bfseries aX}}
+\label{classHyProblem2D_af3d4f34732ec26825a2aa74a6fdd1f75}
+
+\item 
+\hypertarget{classHyProblem2D_acf8f18b879307b5df12f5e883aeb201b}{
+\hyperlink{classHyVector}{HyVector}$<$ T $>$ {\bfseries aF}}
+\label{classHyProblem2D_acf8f18b879307b5df12f5e883aeb201b}
+
+\item 
+\hypertarget{classHyProblem2D_a903b2b3dd93b65311f1f89dc8e51e032}{
+\hyperlink{classHyVector}{HyVector}$<$ T $>$ {\bfseries aG}}
+\label{classHyProblem2D_a903b2b3dd93b65311f1f89dc8e51e032}
+
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$typename T$>$ class HyProblem2D$<$ T $>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHyProblem2D_a116bb99c93f87c2c7446f27eaff92827}{
+\index{HyProblem2D@{HyProblem2D}!HyProblem2D@{HyProblem2D}}
+\index{HyProblem2D@{HyProblem2D}!HyProblem2D@{HyProblem2D}}
+\subsubsection[{HyProblem2D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf HyProblem2D}$<$ T $>$::{\bf HyProblem2D} ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyProblem2D_a116bb99c93f87c2c7446f27eaff92827}
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pSize}]Size of the square matrix \item[{\em pValue}]Default value of the elements (0 if not precised) \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Square matrix pSize$\ast$pSize 
+\end{DoxyReturn}
+\hypertarget{classHyProblem2D_a8de2354be8948a704b063bddfc530b62}{
+\index{HyProblem2D@{HyProblem2D}!HyProblem2D@{HyProblem2D}}
+\index{HyProblem2D@{HyProblem2D}!HyProblem2D@{HyProblem2D}}
+\subsubsection[{HyProblem2D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf HyProblem2D}$<$ T $>$::{\bf HyProblem2D} ({\bf HyBoundary2D}$<$ T $>$ \& {\em pBoundary}, \/  std::string \& {\em pDescription}, \/  {\bf HyMesh2D}$<$ T $>$ \& {\em pMesh})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyProblem2D_a8de2354be8948a704b063bddfc530b62}
+
+
+Constructor. Initializes the matrix and the vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pBoundary}]Boundary of the domain \item[{\em pDescription}]Description of the problem \item[{\em pMesh}]Mesh of the domain \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHyProblem2D_ad12f53b0d42866701690300d520aa8b2}{
+\index{HyProblem2D@{HyProblem2D}!f@{f}}
+\index{f@{f}!HyProblem2D@{HyProblem2D}}
+\subsubsection[{f}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ double {\bf HyProblem2D}$<$ T $>$::f (T {\em pX}, \/  T {\em pY})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyProblem2D_ad12f53b0d42866701690300d520aa8b2}
+
+
+The function f. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pX,pY}]The coordinate of evaluation \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of f(pX,pY) 
+\end{DoxyReturn}
+\hypertarget{classHyProblem2D_a01c5fa60862c89ded1a64f019f24b866}{
+\index{HyProblem2D@{HyProblem2D}!f@{f}}
+\index{f@{f}!HyProblem2D@{HyProblem2D}}
+\subsubsection[{f}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ double {\bf HyProblem2D}$<$ T $>$::f ({\bf HyPoint}$<$ T $>$ {\em pPoint})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyProblem2D_a01c5fa60862c89ded1a64f019f24b866}
+
+
+The function f. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pPoint}]The point of evaluation \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of f(pPoint) 
+\end{DoxyReturn}
+\hypertarget{classHyProblem2D_acf8413f6d284ffaab2194a3dd43e56b8}{
+\index{HyProblem2D@{HyProblem2D}!g@{g}}
+\index{g@{g}!HyProblem2D@{HyProblem2D}}
+\subsubsection[{g}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ double {\bf HyProblem2D}$<$ T $>$::g (T {\em pX}, \/  T {\em pY})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyProblem2D_acf8413f6d284ffaab2194a3dd43e56b8}
+
+
+The Dirichlet condition on the boundary. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pX,pY}]The coordinates of evaluation \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the Dirichlet condition on the point (pX,pY) 
+\end{DoxyReturn}
+\hypertarget{classHyProblem2D_a3b2b6264520c3f1ee7e475ea3785d26d}{
+\index{HyProblem2D@{HyProblem2D}!g@{g}}
+\index{g@{g}!HyProblem2D@{HyProblem2D}}
+\subsubsection[{g}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ double {\bf HyProblem2D}$<$ T $>$::g ({\bf HyPoint}$<$ T $>$ {\em pPoint})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyProblem2D_a3b2b6264520c3f1ee7e475ea3785d26d}
+
+
+The Dirichlet condition on the boundary. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pPoint}]The point of evaluation \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the Dirichlet condition on pPoint 
+\end{DoxyReturn}
+\hypertarget{classHyProblem2D_a5a300ef6e1863ff9ed16fccb853e3e68}{
+\index{HyProblem2D@{HyProblem2D}!projectionOnGamma@{projectionOnGamma}}
+\index{projectionOnGamma@{projectionOnGamma}!HyProblem2D@{HyProblem2D}}
+\subsubsection[{projectionOnGamma}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf HyProblem2D}$<$ T $>$::projectionOnGamma ({\bf HyPoint}$<$ T $>$ \& {\em pPointIn}, \/  {\bf HyPoint}$<$ T $>$ \& {\em pPointOut}, \/  double $\ast$ {\em ph}, \/  double $\ast$ {\em pu})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyProblem2D_a5a300ef6e1863ff9ed16fccb853e3e68}
+
+
+Finds the intersection between \mbox{[}pPointIn,pPointOut\mbox{]} and the boundary. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pPointIn}]The point in OmegaIn \item[{\em pPointOut}]The point in OmegaOut \item[{\em ph}]Will be the value of the partial h (between 0 and 1) \item[{\em pu}]Will be the value of g in the projection point \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+HyProblem2D.h\item 
+\hyperlink{HyProblem2D_8ipp}{HyProblem2D.ipp}\end{DoxyCompactItemize}

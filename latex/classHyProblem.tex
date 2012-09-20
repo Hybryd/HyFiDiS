@@ -1,0 +1,226 @@
+\hypertarget{classHyProblem}{
+\section{HyProblem$<$ T $>$ Class Template Reference}
+\label{classHyProblem}\index{HyProblem@{HyProblem}}
+}
+
+
+Defines a physical problem.  
+
+
+
+
+{\ttfamily \#include $<$HyProblem.hpp$>$}
+
+Inheritance diagram for HyProblem$<$ T $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classHyProblem}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classHyProblem_adc400712e624ef7107837a200082106a}{
+\hyperlink{classHyProblem_adc400712e624ef7107837a200082106a}{HyProblem} ()}
+\label{classHyProblem_adc400712e624ef7107837a200082106a}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{classHyProblem_a7095777a5ace089bc97b94dca99b15e5}{
+{\bfseries HyProblem} (\hyperlink{classHyDomain}{HyDomain}$<$ T $>$ \&pDomain, \hyperlink{classHyBoundary}{HyBoundary}$<$ T $>$ \&pBoundary, \hyperlink{classHyMesh2D}{HyMesh2D}$<$ T $>$ \&pMesh, std::string \&pDescription)}
+\label{classHyProblem_a7095777a5ace089bc97b94dca99b15e5}
+
+\item 
+\hypertarget{classHyProblem_a83930a79d3e3129d9baccfc87dc5b644}{
+\hyperlink{classHyBoundary}{HyBoundary}$<$ T $>$ \& {\bfseries getBoundary} ()}
+\label{classHyProblem_a83930a79d3e3129d9baccfc87dc5b644}
+
+\item 
+\hypertarget{classHyProblem_a11d299a8fb714521e9372e9c52c83624}{
+std::string \& {\bfseries getDescription} ()}
+\label{classHyProblem_a11d299a8fb714521e9372e9c52c83624}
+
+\item 
+\hypertarget{classHyProblem_a5afc0faab283a084c4362789089300fa}{
+\hyperlink{classHyDomain}{HyDomain}$<$ T $>$ \& {\bfseries getDomain} ()}
+\label{classHyProblem_a5afc0faab283a084c4362789089300fa}
+
+\item 
+\hypertarget{classHyProblem_aa0d4e2347207b2e81aba21ff71d2d466}{
+\hyperlink{classHyMesh2D}{HyMesh2D}$<$ T $>$ \& {\bfseries getMesh} ()}
+\label{classHyProblem_aa0d4e2347207b2e81aba21ff71d2d466}
+
+\item 
+\hypertarget{classHyProblem_a69ec82f40bcde905ae9bed9b181680fe}{
+Eigen::SparseMatrix$<$ T $>$ \& {\bfseries getMatrix} ()}
+\label{classHyProblem_a69ec82f40bcde905ae9bed9b181680fe}
+
+\item 
+\hypertarget{classHyProblem_a7fc4251c8a28039d5fc1e954420b9e8d}{
+Eigen::VectorXd \& {\bfseries getX} ()}
+\label{classHyProblem_a7fc4251c8a28039d5fc1e954420b9e8d}
+
+\item 
+\hypertarget{classHyProblem_a8ebd85b6c5c13d94d9f8be8041ca2507}{
+Eigen::VectorXd \& {\bfseries getF} ()}
+\label{classHyProblem_a8ebd85b6c5c13d94d9f8be8041ca2507}
+
+\item 
+\hypertarget{classHyProblem_a2024a50f38fd285fc60eb88a549094cb}{
+Eigen::VectorXd \& {\bfseries getG} ()}
+\label{classHyProblem_a2024a50f38fd285fc60eb88a549094cb}
+
+\item 
+\hypertarget{classHyProblem_abdd44294731eb686dcd5254ef7bafe74}{
+void {\bfseries setBoundary} (\hyperlink{classHyBoundary}{HyBoundary}$<$ T $>$ \&lB)}
+\label{classHyProblem_abdd44294731eb686dcd5254ef7bafe74}
+
+\item 
+\hypertarget{classHyProblem_ae7feccde80b8a6db481908b70d6eb24e}{
+void {\bfseries setX} (Eigen::VectorXd pVector)}
+\label{classHyProblem_ae7feccde80b8a6db481908b70d6eb24e}
+
+\item 
+\hypertarget{classHyProblem_a6419ca29465c86cc742efd7dba79f1b3}{
+virtual void {\bfseries build} ()=0}
+\label{classHyProblem_a6419ca29465c86cc742efd7dba79f1b3}
+
+\item 
+void \hyperlink{classHyProblem_a894b6467b03798221e48e1fb10ad3fcf}{updateMesh} ()
+\begin{DoxyCompactList}\small\item\em Check if each point is inside the domain Omega, on the boundary, or outside. Also update neighbourhood. \item\end{DoxyCompactList}\item 
+\hypertarget{classHyProblem_a4f5e62e3412d2e7b1475a8ec6a44052a}{
+virtual void {\bfseries solve} ()=0}
+\label{classHyProblem_a4f5e62e3412d2e7b1475a8ec6a44052a}
+
+\item 
+double \hyperlink{classHyProblem_a5d3b78c69811136e74e9fc9232cc110b}{g} (\hyperlink{classHyPoint}{HyPoint}$<$ T $>$ pPoint)
+\begin{DoxyCompactList}\small\item\em The Dirichlet condition on the boundary. \item\end{DoxyCompactList}\item 
+\hypertarget{classHyProblem_a14a8e72160ffe2e90664c40a53930c54}{
+double {\bfseries g} (T pX, T pY, T pZ)}
+\label{classHyProblem_a14a8e72160ffe2e90664c40a53930c54}
+
+\item 
+\hypertarget{classHyProblem_a35ab1f86f6069adcfc9d2d958a6181b9}{
+void \hyperlink{classHyProblem_a35ab1f86f6069adcfc9d2d958a6181b9}{display} (std::ostream \&out)}
+\label{classHyProblem_a35ab1f86f6069adcfc9d2d958a6181b9}
+
+\begin{DoxyCompactList}\small\item\em Displays the object HyProblem2D. \item\end{DoxyCompactList}\item 
+\hypertarget{classHyProblem_a826f04877aef38225f7661b37969f946}{
+void {\bfseries displaySolutionGP} (std::ostream \&out)}
+\label{classHyProblem_a826f04877aef38225f7661b37969f946}
+
+\item 
+\hypertarget{classHyProblem_a77b1843d7ea8271849e7d3d804587c12}{
+\hyperlink{classHyProblem}{HyProblem}$<$ T $>$ \& {\bfseries operator=} (const \hyperlink{classHyProblem}{HyProblem}$<$ T $>$ \&pP)}
+\label{classHyProblem_a77b1843d7ea8271849e7d3d804587c12}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHyDomain}{HyDomain}$<$ T $>$ \& \hyperlink{classHyProblem_a245270926a69fef2df91e3aad939fee3}{aDomain}
+\item 
+\hyperlink{classHyBoundary}{HyBoundary}$<$ T $>$ \& \hyperlink{classHyProblem_af7a46447af3592758cb384ac355a30fd}{aBoundary}
+\item 
+\hyperlink{classHyMesh2D}{HyMesh2D}$<$ T $>$ \& \hyperlink{classHyProblem_a370a94346e3e688f352f60ff1e8ba1ab}{aMesh}
+\item 
+std::string \& \hyperlink{classHyProblem_a9ff58aa13598c448222203cbb0ad6a10}{aDescription}
+\item 
+Eigen::SparseMatrix$<$ T $>$ \hyperlink{classHyProblem_a4930e5e04c383d64f8a3eb2dfe24fb54}{aMatrix}
+\item 
+Eigen::VectorXd \hyperlink{classHyProblem_ad08883fb8ad06aadda0302fc387433cf}{aX}
+\item 
+Eigen::VectorXd \hyperlink{classHyProblem_a9c31ddb647141522c68ce12c1fc0036b}{aF}
+\item 
+Eigen::VectorXd \hyperlink{classHyProblem_a3426083f6fd97b687b72b6656db0a224}{aG}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$ class HyProblem$<$ T $>$}
+
+Defines a physical problem. The class \hyperlink{classHyProblem}{HyProblem} represents a physical problem described by a domain, its boundary, the corresponding PDE and the boundary conditions. The numerical solution is obtained by solving the linear system AX = F+G. A represents the matrix (determined by the equation of the problem), X is the unknown vector (the approximate solution), F 
+
+\subsection{Member Function Documentation}
+\hypertarget{classHyProblem_a5d3b78c69811136e74e9fc9232cc110b}{
+\index{HyProblem@{HyProblem}!g@{g}}
+\index{g@{g}!HyProblem@{HyProblem}}
+\subsubsection[{g}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ double {\bf HyProblem}$<$ T $>$::g ({\bf HyPoint}$<$ T $>$ {\em pPoint})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyProblem_a5d3b78c69811136e74e9fc9232cc110b}
+
+
+The Dirichlet condition on the boundary. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pPoint}]The point of evaluation \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the Dirichlet condition on pPoint 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classHyDiffusion2D_a0df1a7fbe0b6a50d85a74c655f32cfb2}{HyDiffusion2D$<$ T $>$}, and \hyperlink{classHyPoisson2D_a9c27e90e3abb3a6ebe5d6b3274412e7a}{HyPoisson2D$<$ T $>$}.
+
+\hypertarget{classHyProblem_a894b6467b03798221e48e1fb10ad3fcf}{
+\index{HyProblem@{HyProblem}!updateMesh@{updateMesh}}
+\index{updateMesh@{updateMesh}!HyProblem@{HyProblem}}
+\subsubsection[{updateMesh}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf HyProblem}$<$ T $>$::updateMesh ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyProblem_a894b6467b03798221e48e1fb10ad3fcf}
+
+
+Check if each point is inside the domain Omega, on the boundary, or outside. Also update neighbourhood. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pPoint}]The point of evaluation \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the Dirichlet condition on pPoint 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHyProblem_af7a46447af3592758cb384ac355a30fd}{
+\index{HyProblem@{HyProblem}!aBoundary@{aBoundary}}
+\index{aBoundary@{aBoundary}!HyProblem@{HyProblem}}
+\subsubsection[{aBoundary}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf HyBoundary}$<$T$>$\& {\bf HyProblem}$<$ T $>$::{\bf aBoundary}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyProblem_af7a46447af3592758cb384ac355a30fd}
+The boundary of the domain \hypertarget{classHyProblem_a9ff58aa13598c448222203cbb0ad6a10}{
+\index{HyProblem@{HyProblem}!aDescription@{aDescription}}
+\index{aDescription@{aDescription}!HyProblem@{HyProblem}}
+\subsubsection[{aDescription}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ std::string\& {\bf HyProblem}$<$ T $>$::{\bf aDescription}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyProblem_a9ff58aa13598c448222203cbb0ad6a10}
+A brief description of the problem \hypertarget{classHyProblem_a245270926a69fef2df91e3aad939fee3}{
+\index{HyProblem@{HyProblem}!aDomain@{aDomain}}
+\index{aDomain@{aDomain}!HyProblem@{HyProblem}}
+\subsubsection[{aDomain}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf HyDomain}$<$T$>$\& {\bf HyProblem}$<$ T $>$::{\bf aDomain}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyProblem_a245270926a69fef2df91e3aad939fee3}
+The whole rectangular domain that will determine the mesh \hypertarget{classHyProblem_a9c31ddb647141522c68ce12c1fc0036b}{
+\index{HyProblem@{HyProblem}!aF@{aF}}
+\index{aF@{aF}!HyProblem@{HyProblem}}
+\subsubsection[{aF}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ Eigen::VectorXd {\bf HyProblem}$<$ T $>$::{\bf aF}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyProblem_a9c31ddb647141522c68ce12c1fc0036b}
+The vector containing values of the f function \hypertarget{classHyProblem_a3426083f6fd97b687b72b6656db0a224}{
+\index{HyProblem@{HyProblem}!aG@{aG}}
+\index{aG@{aG}!HyProblem@{HyProblem}}
+\subsubsection[{aG}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ Eigen::VectorXd {\bf HyProblem}$<$ T $>$::{\bf aG}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyProblem_a3426083f6fd97b687b72b6656db0a224}
+The vector containing values of the Dirichlet condition \hypertarget{classHyProblem_a4930e5e04c383d64f8a3eb2dfe24fb54}{
+\index{HyProblem@{HyProblem}!aMatrix@{aMatrix}}
+\index{aMatrix@{aMatrix}!HyProblem@{HyProblem}}
+\subsubsection[{aMatrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ Eigen::SparseMatrix$<$T$>$ {\bf HyProblem}$<$ T $>$::{\bf aMatrix}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyProblem_a4930e5e04c383d64f8a3eb2dfe24fb54}
+The matrix A of the linear problem \hypertarget{classHyProblem_a370a94346e3e688f352f60ff1e8ba1ab}{
+\index{HyProblem@{HyProblem}!aMesh@{aMesh}}
+\index{aMesh@{aMesh}!HyProblem@{HyProblem}}
+\subsubsection[{aMesh}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf HyMesh2D}$<$T$>$\& {\bf HyProblem}$<$ T $>$::{\bf aMesh}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyProblem_a370a94346e3e688f352f60ff1e8ba1ab}
+The mesh for the numerical resolution \hypertarget{classHyProblem_ad08883fb8ad06aadda0302fc387433cf}{
+\index{HyProblem@{HyProblem}!aX@{aX}}
+\index{aX@{aX}!HyProblem@{HyProblem}}
+\subsubsection[{aX}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ Eigen::VectorXd {\bf HyProblem}$<$ T $>$::{\bf aX}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyProblem_ad08883fb8ad06aadda0302fc387433cf}
+The unknown solution 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{HyProblem_8hpp}{HyProblem.hpp}\item 
+\hyperlink{HyProblem_8ipp}{HyProblem.ipp}\end{DoxyCompactItemize}

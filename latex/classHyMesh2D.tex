@@ -1,0 +1,207 @@
+\hypertarget{classHyMesh2D}{
+\section{HyMesh2D$<$ T $>$ Class Template Reference}
+\label{classHyMesh2D}\index{HyMesh2D@{HyMesh2D}}
+}
+
+
+Two dimensional mesh.  
+
+
+
+
+{\ttfamily \#include $<$HyMesh2D.hpp$>$}
+
+Inheritance diagram for HyMesh2D$<$ T $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classHyMesh2D}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classHyMesh2D_ad6cb9da096558be08d3fa3c1f8929410}{
+\hyperlink{classHyMesh2D_ad6cb9da096558be08d3fa3c1f8929410}{HyMesh2D} ()}
+\label{classHyMesh2D_ad6cb9da096558be08d3fa3c1f8929410}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{classHyMesh2D_a0b73e736d5f0a2fc253d4ef724968b1f}{HyMesh2D} (\hyperlink{classHyPoint}{HyPoint}$<$ T $>$ \&pBL, \hyperlink{classHyPoint}{HyPoint}$<$ T $>$ \&pUR, unsigned long pNbRectanglesX, unsigned long pNbRectanglesY)
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{classHyMesh2D_addcbe5c16210083bf69b1210ea11d569}{HyMesh2D} (\hyperlink{classHyMesh2D}{HyMesh2D}$<$ T $>$ \&pMesh)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \item\end{DoxyCompactList}\item 
+std::vector$<$ std::vector$<$ \hyperlink{classHyPoint}{HyPoint}$<$ T $>$ $>$ $>$ \& \hyperlink{classHyMesh2D_a8f075d7ba59bc759dc138109fd551496}{getMesh} ()
+\begin{DoxyCompactList}\small\item\em Getter to aMesh attribute. \item\end{DoxyCompactList}\item 
+unsigned long \hyperlink{classHyMesh2D_a8646d6b9e0b42270744a2b3c15af2563}{getNbRectanglesX} ()
+\begin{DoxyCompactList}\small\item\em Getter to aNbRectanglesX attribute. \item\end{DoxyCompactList}\item 
+unsigned long \hyperlink{classHyMesh2D_af247c2440a04397980270bb0b4410225}{getNbRectanglesY} ()
+\begin{DoxyCompactList}\small\item\em Getter to aNbRectanglesY attribute. \item\end{DoxyCompactList}\item 
+double \hyperlink{classHyMesh2D_aa3c7f4d72c521783c2b358b6f7b73031}{getHX} ()
+\begin{DoxyCompactList}\small\item\em Getter to ahX attribute. \item\end{DoxyCompactList}\item 
+double \hyperlink{classHyMesh2D_a94d54a398cb5d0de0b083b03926d698e}{getHY} ()
+\begin{DoxyCompactList}\small\item\em Getter to ahY attribute. \item\end{DoxyCompactList}\item 
+unsigned long \hyperlink{classHyMesh2D_a109323e7c482899df86c76102ff3a5e8}{size} ()
+\begin{DoxyCompactList}\small\item\em Number of points in the mesh. \item\end{DoxyCompactList}\item 
+\hypertarget{classHyMesh2D_ae2cb45f669fcbb6e340488efc8811d94}{
+std::vector$<$ \hyperlink{classHyPoint}{HyPoint}$<$ T $>$ $>$ \& \hyperlink{classHyMesh2D_ae2cb45f669fcbb6e340488efc8811d94}{operator\mbox{[}$\,$\mbox{]}} (unsigned long i)}
+\label{classHyMesh2D_ae2cb45f669fcbb6e340488efc8811d94}
+
+\begin{DoxyCompactList}\small\item\em operator\mbox{[}\mbox{]} \item\end{DoxyCompactList}\item 
+\hypertarget{classHyMesh2D_a39651f07d9d3d8afc6b6f80b7883df71}{
+void {\bfseries display} ()}
+\label{classHyMesh2D_a39651f07d9d3d8afc6b6f80b7883df71}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std::vector$<$ std::vector$<$ \hyperlink{classHyPoint}{HyPoint}$<$ T $>$ $>$ $>$ \hyperlink{classHyMesh2D_af82a94a4943d2da5637d0bbc0b405eed}{aMesh}
+\item 
+unsigned long \hyperlink{classHyMesh2D_a53430a7d9168ad8e9392252b87e139eb}{aNbRectanglesX}
+\item 
+unsigned long \hyperlink{classHyMesh2D_a836a8033b37ffdb7103510eabb1b3055}{aNbRectanglesY}
+\item 
+double \hyperlink{classHyMesh2D_a613e4597dc45ca5629ec46eb941e9db8}{ahX}
+\item 
+double \hyperlink{classHyMesh2D_a90e7b6ebe92fca8ad22795899ec8500b}{ahY}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$ class HyMesh2D$<$ T $>$}
+
+Two dimensional mesh. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHyMesh2D_a0b73e736d5f0a2fc253d4ef724968b1f}{
+\index{HyMesh2D@{HyMesh2D}!HyMesh2D@{HyMesh2D}}
+\index{HyMesh2D@{HyMesh2D}!HyMesh2D@{HyMesh2D}}
+\subsubsection[{HyMesh2D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf HyMesh2D}$<$ T $>$::{\bf HyMesh2D} ({\bf HyPoint}$<$ T $>$ \& {\em pBL}, \/  {\bf HyPoint}$<$ T $>$ \& {\em pUR}, \/  unsigned long {\em pNbRectanglesX}, \/  unsigned long {\em pNbRectanglesY})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyMesh2D_a0b73e736d5f0a2fc253d4ef724968b1f}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pBL}]: The Bottom Left point \item[{\em pUR}]: The Upper Right point \item[{\em pNbRectanglesX}]: Number of nodes on X-\/axis \item[{\em pNbRectanglesY}]: Number of nodes on Y-\/axis \end{DoxyParams}
+\hypertarget{classHyMesh2D_addcbe5c16210083bf69b1210ea11d569}{
+\index{HyMesh2D@{HyMesh2D}!HyMesh2D@{HyMesh2D}}
+\index{HyMesh2D@{HyMesh2D}!HyMesh2D@{HyMesh2D}}
+\subsubsection[{HyMesh2D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf HyMesh2D}$<$ T $>$::{\bf HyMesh2D} ({\bf HyMesh2D}$<$ T $>$ \& {\em pMesh})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyMesh2D_addcbe5c16210083bf69b1210ea11d569}
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pMesh}]: Reference to another \hyperlink{classHyMesh}{HyMesh} \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHyMesh2D_aa3c7f4d72c521783c2b358b6f7b73031}{
+\index{HyMesh2D@{HyMesh2D}!getHX@{getHX}}
+\index{getHX@{getHX}!HyMesh2D@{HyMesh2D}}
+\subsubsection[{getHX}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ double {\bf HyMesh2D}$<$ T $>$::getHX ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyMesh2D_aa3c7f4d72c521783c2b358b6f7b73031}
+
+
+Getter to ahX attribute. 
+
+\begin{DoxyReturn}{Returns}
+ahX 
+\end{DoxyReturn}
+\hypertarget{classHyMesh2D_a94d54a398cb5d0de0b083b03926d698e}{
+\index{HyMesh2D@{HyMesh2D}!getHY@{getHY}}
+\index{getHY@{getHY}!HyMesh2D@{HyMesh2D}}
+\subsubsection[{getHY}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ double {\bf HyMesh2D}$<$ T $>$::getHY ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyMesh2D_a94d54a398cb5d0de0b083b03926d698e}
+
+
+Getter to ahY attribute. 
+
+\begin{DoxyReturn}{Returns}
+ahY 
+\end{DoxyReturn}
+\hypertarget{classHyMesh2D_a8f075d7ba59bc759dc138109fd551496}{
+\index{HyMesh2D@{HyMesh2D}!getMesh@{getMesh}}
+\index{getMesh@{getMesh}!HyMesh2D@{HyMesh2D}}
+\subsubsection[{getMesh}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ std::vector$<$ std::vector$<$ {\bf HyPoint}$<$T$>$ $>$ $>$\& {\bf HyMesh2D}$<$ T $>$::getMesh ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyMesh2D_a8f075d7ba59bc759dc138109fd551496}
+
+
+Getter to aMesh attribute. 
+
+\begin{DoxyReturn}{Returns}
+Reference to aMesh 
+\end{DoxyReturn}
+\hypertarget{classHyMesh2D_a8646d6b9e0b42270744a2b3c15af2563}{
+\index{HyMesh2D@{HyMesh2D}!getNbRectanglesX@{getNbRectanglesX}}
+\index{getNbRectanglesX@{getNbRectanglesX}!HyMesh2D@{HyMesh2D}}
+\subsubsection[{getNbRectanglesX}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ unsigned long {\bf HyMesh2D}$<$ T $>$::getNbRectanglesX ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyMesh2D_a8646d6b9e0b42270744a2b3c15af2563}
+
+
+Getter to aNbRectanglesX attribute. 
+
+\begin{DoxyReturn}{Returns}
+aNbRectanglesX 
+\end{DoxyReturn}
+\hypertarget{classHyMesh2D_af247c2440a04397980270bb0b4410225}{
+\index{HyMesh2D@{HyMesh2D}!getNbRectanglesY@{getNbRectanglesY}}
+\index{getNbRectanglesY@{getNbRectanglesY}!HyMesh2D@{HyMesh2D}}
+\subsubsection[{getNbRectanglesY}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ unsigned long {\bf HyMesh2D}$<$ T $>$::getNbRectanglesY ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyMesh2D_af247c2440a04397980270bb0b4410225}
+
+
+Getter to aNbRectanglesY attribute. 
+
+\begin{DoxyReturn}{Returns}
+aNbRectanglesY 
+\end{DoxyReturn}
+\hypertarget{classHyMesh2D_a109323e7c482899df86c76102ff3a5e8}{
+\index{HyMesh2D@{HyMesh2D}!size@{size}}
+\index{size@{size}!HyMesh2D@{HyMesh2D}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ unsigned long {\bf HyMesh2D}$<$ T $>$::size ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyMesh2D_a109323e7c482899df86c76102ff3a5e8}
+
+
+Number of points in the mesh. 
+
+\begin{DoxyReturn}{Returns}
+The number of points in the mesh 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHyMesh2D_a613e4597dc45ca5629ec46eb941e9db8}{
+\index{HyMesh2D@{HyMesh2D}!ahX@{ahX}}
+\index{ahX@{ahX}!HyMesh2D@{HyMesh2D}}
+\subsubsection[{ahX}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ double {\bf HyMesh2D}$<$ T $>$::{\bf ahX}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyMesh2D_a613e4597dc45ca5629ec46eb941e9db8}
+Size between two nodes on X-\/axis \hypertarget{classHyMesh2D_a90e7b6ebe92fca8ad22795899ec8500b}{
+\index{HyMesh2D@{HyMesh2D}!ahY@{ahY}}
+\index{ahY@{ahY}!HyMesh2D@{HyMesh2D}}
+\subsubsection[{ahY}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ double {\bf HyMesh2D}$<$ T $>$::{\bf ahY}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyMesh2D_a90e7b6ebe92fca8ad22795899ec8500b}
+Size between two nodes on Y-\/axis \hypertarget{classHyMesh2D_af82a94a4943d2da5637d0bbc0b405eed}{
+\index{HyMesh2D@{HyMesh2D}!aMesh@{aMesh}}
+\index{aMesh@{aMesh}!HyMesh2D@{HyMesh2D}}
+\subsubsection[{aMesh}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ std::vector$<$ std::vector$<${\bf HyPoint}$<$T$>$ $>$ $>$ {\bf HyMesh2D}$<$ T $>$::{\bf aMesh}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyMesh2D_af82a94a4943d2da5637d0bbc0b405eed}
+The mesh \hypertarget{classHyMesh2D_a53430a7d9168ad8e9392252b87e139eb}{
+\index{HyMesh2D@{HyMesh2D}!aNbRectanglesX@{aNbRectanglesX}}
+\index{aNbRectanglesX@{aNbRectanglesX}!HyMesh2D@{HyMesh2D}}
+\subsubsection[{aNbRectanglesX}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ unsigned long {\bf HyMesh2D}$<$ T $>$::{\bf aNbRectanglesX}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyMesh2D_a53430a7d9168ad8e9392252b87e139eb}
+Number of nodes on X-\/axis \hypertarget{classHyMesh2D_a836a8033b37ffdb7103510eabb1b3055}{
+\index{HyMesh2D@{HyMesh2D}!aNbRectanglesY@{aNbRectanglesY}}
+\index{aNbRectanglesY@{aNbRectanglesY}!HyMesh2D@{HyMesh2D}}
+\subsubsection[{aNbRectanglesY}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ unsigned long {\bf HyMesh2D}$<$ T $>$::{\bf aNbRectanglesY}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyMesh2D_a836a8033b37ffdb7103510eabb1b3055}
+Number of nodes on Y-\/axis 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{HyMesh2D_8hpp}{HyMesh2D.hpp}\item 
+HyMesh2D.ipp\end{DoxyCompactItemize}

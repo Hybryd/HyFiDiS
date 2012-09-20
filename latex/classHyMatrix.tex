@@ -1,0 +1,130 @@
+\hypertarget{classHyMatrix}{
+\section{HyMatrix$<$ T $>$ Class Template Reference}
+\label{classHyMatrix}\index{HyMatrix@{HyMatrix}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHyMatrix_a7e6eff97c9a87088513c587b73eafde0}{HyMatrix} (unsigned int pSize, T pValue)
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{classHyMatrix_a43816079e02155aedf11c1101bd35bc4}{HyMatrix} (unsigned int pNbRows, unsigned int pNbColumns, T pValue)
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{classHyMatrix_adc9b600eb1ab49aaea1fb3efa7b6e64f}{
+unsigned int {\bfseries getNbRows} ()}
+\label{classHyMatrix_adc9b600eb1ab49aaea1fb3efa7b6e64f}
+
+\item 
+\hypertarget{classHyMatrix_a50f812738c3e6017214fb66fb29ceceb}{
+unsigned int {\bfseries getNbColumns} ()}
+\label{classHyMatrix_a50f812738c3e6017214fb66fb29ceceb}
+
+\item 
+\hypertarget{classHyMatrix_a5af484dcfa5ff7faef24f177f46e94b4}{
+bool {\bfseries getIsSquare} ()}
+\label{classHyMatrix_a5af484dcfa5ff7faef24f177f46e94b4}
+
+\item 
+\hypertarget{classHyMatrix_a045e0b320e3e45d1ca3257704a040290}{
+unsigned int {\bfseries size} ()}
+\label{classHyMatrix_a045e0b320e3e45d1ca3257704a040290}
+
+\item 
+std::vector$<$ T $>$ \& \hyperlink{classHyMatrix_ae6752e1b495cc71c41c68632afe0761c}{operator\mbox{[}$\,$\mbox{]}} (unsigned int i)
+\begin{DoxyCompactList}\small\item\em operator\mbox{[}\mbox{]} \item\end{DoxyCompactList}\item 
+\hypertarget{classHyMatrix_ae0cfb3b19ebb77f9f41a4d4b890b3b39}{
+void {\bfseries diagRow} (unsigned int pIndex)}
+\label{classHyMatrix_ae0cfb3b19ebb77f9f41a4d4b890b3b39}
+
+\item 
+\hypertarget{classHyMatrix_ab62629c9d24b76668598e5860822ba3e}{
+void {\bfseries diagColumn} (unsigned int pIndex)}
+\label{classHyMatrix_ab62629c9d24b76668598e5860822ba3e}
+
+\item 
+\hypertarget{classHyMatrix_a996225fd92d1311f060dcd34fa0931e8}{
+void {\bfseries diagRowColumn} (unsigned int pIndex)}
+\label{classHyMatrix_a996225fd92d1311f060dcd34fa0931e8}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classHyMatrix_a3a882d14100838832af32d17add61860}{
+std::vector$<$ std::vector$<$ T $>$ $>$ {\bfseries aMatrix}}
+\label{classHyMatrix_a3a882d14100838832af32d17add61860}
+
+\item 
+\hypertarget{classHyMatrix_aeb1d576ca4b1b68cf0afb0d67b439502}{
+unsigned int {\bfseries aNbRows}}
+\label{classHyMatrix_aeb1d576ca4b1b68cf0afb0d67b439502}
+
+\item 
+\hypertarget{classHyMatrix_a8b75c7990c27cc04434ad3cce410ad4c}{
+unsigned int {\bfseries aNbColumns}}
+\label{classHyMatrix_a8b75c7990c27cc04434ad3cce410ad4c}
+
+\item 
+\hypertarget{classHyMatrix_a92656055bda39706f39de6566ff33065}{
+bool {\bfseries aIsSquare}}
+\label{classHyMatrix_a92656055bda39706f39de6566ff33065}
+
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$typename T$>$ class HyMatrix$<$ T $>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHyMatrix_a7e6eff97c9a87088513c587b73eafde0}{
+\index{HyMatrix@{HyMatrix}!HyMatrix@{HyMatrix}}
+\index{HyMatrix@{HyMatrix}!HyMatrix@{HyMatrix}}
+\subsubsection[{HyMatrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf HyMatrix}$<$ T $>$::{\bf HyMatrix} (unsigned int {\em pSize}, \/  T {\em pValue} = {\ttfamily 0})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyMatrix_a7e6eff97c9a87088513c587b73eafde0}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pSize}]Size of the square matrix \item[{\em pValue}]Default value of the elements (0 if not precised) \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Square matrix pSize$\ast$pSize 
+\end{DoxyReturn}
+\hypertarget{classHyMatrix_a43816079e02155aedf11c1101bd35bc4}{
+\index{HyMatrix@{HyMatrix}!HyMatrix@{HyMatrix}}
+\index{HyMatrix@{HyMatrix}!HyMatrix@{HyMatrix}}
+\subsubsection[{HyMatrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf HyMatrix}$<$ T $>$::{\bf HyMatrix} (unsigned int {\em pNbRows}, \/  unsigned int {\em pNbColumns}, \/  T {\em pValue} = {\ttfamily 0})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyMatrix_a43816079e02155aedf11c1101bd35bc4}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pNbRows}]Number of rows \item[{\em pNbColumns}]Number of columns \item[{\em pValue}]Default value of the elements (0 if not precised) \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix pNbRows$\ast$pNbColumns 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHyMatrix_ae6752e1b495cc71c41c68632afe0761c}{
+\index{HyMatrix@{HyMatrix}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!HyMatrix@{HyMatrix}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std::vector$<$ T $>$ \& {\bf HyMatrix}$<$ T $>$::operator\mbox{[}$\,$\mbox{]} (unsigned int {\em i})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyMatrix_ae6752e1b495cc71c41c68632afe0761c}
+
+
+operator\mbox{[}\mbox{]} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em i}]index \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ith row 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{HyMatrix_8hpp}{HyMatrix.hpp}\item 
+\hyperlink{HyMatrix_8ipp}{HyMatrix.ipp}\end{DoxyCompactItemize}
