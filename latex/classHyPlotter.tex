@@ -2,47 +2,94 @@
 \section{HyPlotter$<$ T $>$ Class Template Reference}
 \label{classHyPlotter}\index{HyPlotter@{HyPlotter}}
 }
+
+
+This class is used for post-\/processing analysis. Given a \hyperlink{classHyMesh}{HyMesh} and a set of data, it saves the solution in a file.  
+
+
+
+
+{\ttfamily \#include $<$HyPlotter.hpp$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\hypertarget{classHyPlotter_a50b452f5b5747d4505e2e9e85943fbd1}{
+\hyperlink{classHyPlotter_a50b452f5b5747d4505e2e9e85943fbd1}{HyPlotter} ()}
+\label{classHyPlotter_a50b452f5b5747d4505e2e9e85943fbd1}
+
+\begin{DoxyCompactList}\small\item\em Default constructor of \hyperlink{classHyPlotter}{HyPlotter}. \item\end{DoxyCompactList}\item 
 \hypertarget{classHyPlotter_ace9cd6b9ea3082dc8e31f5b6461deb6b}{
 {\bfseries HyPlotter} (\hyperlink{classHyMesh2D}{HyMesh2D}$<$ T $>$ pMesh, std::vector$<$ Eigen::VectorXd $>$ pData, std::string pFileName)}
 \label{classHyPlotter_ace9cd6b9ea3082dc8e31f5b6461deb6b}
 
 \item 
-\hypertarget{classHyPlotter_a3901644f0e38b620ebe2c02b2198aa23}{
-std::string {\bfseries intToString} (unsigned long int n)}
-\label{classHyPlotter_a3901644f0e38b620ebe2c02b2198aa23}
-
-\item 
-\hypertarget{classHyPlotter_acb107c1c3cf44bb32b900c329830fdfd}{
-void {\bfseries save} (std::string pFolder)}
-\label{classHyPlotter_acb107c1c3cf44bb32b900c329830fdfd}
-
-\end{DoxyCompactItemize}
+std::string \hyperlink{classHyPlotter_a3901644f0e38b620ebe2c02b2198aa23}{intToString} (unsigned long int n)
+\begin{DoxyCompactList}\small\item\em Converts an integer to a string. \item\end{DoxyCompactList}\item 
+void \hyperlink{classHyPlotter_acb107c1c3cf44bb32b900c329830fdfd}{save} (std::string pFolder)
+\begin{DoxyCompactList}\small\item\em Save the data in files. In case of a time dependent solution (several VectorXd), suffixes will be written for the name of the files. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classHyPlotter_add8bc0e65fe86f1e8efb025afd679f70}{
-\hyperlink{classHyMesh2D}{HyMesh2D}$<$ T $>$ {\bfseries aMesh}}
-\label{classHyPlotter_add8bc0e65fe86f1e8efb025afd679f70}
-
+\hyperlink{classHyMesh2D}{HyMesh2D}$<$ T $>$ \hyperlink{classHyPlotter_add8bc0e65fe86f1e8efb025afd679f70}{aMesh}
 \item 
-\hypertarget{classHyPlotter_a9aa282a34786a8d215a28b43816a2e6c}{
-std::vector$<$ Eigen::VectorXd $>$ {\bfseries aData}}
-\label{classHyPlotter_a9aa282a34786a8d215a28b43816a2e6c}
-
+std::vector$<$ Eigen::VectorXd $>$ \hyperlink{classHyPlotter_a9aa282a34786a8d215a28b43816a2e6c}{aData}
 \item 
-\hypertarget{classHyPlotter_a7ff236b2b02b1ee33554d0c2d483ca83}{
-std::string {\bfseries aFileName}}
-\label{classHyPlotter_a7ff236b2b02b1ee33554d0c2d483ca83}
-
+std::string \hyperlink{classHyPlotter_a7ff236b2b02b1ee33554d0c2d483ca83}{aFileName}
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
 \subsubsection*{template$<$typename T$>$ class HyPlotter$<$ T $>$}
 
+This class is used for post-\/processing analysis. Given a \hyperlink{classHyMesh}{HyMesh} and a set of data, it saves the solution in a file. 
 
+\subsection{Member Function Documentation}
+\hypertarget{classHyPlotter_a3901644f0e38b620ebe2c02b2198aa23}{
+\index{HyPlotter@{HyPlotter}!intToString@{intToString}}
+\index{intToString@{intToString}!HyPlotter@{HyPlotter}}
+\subsubsection[{intToString}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std::string {\bf HyPlotter}$<$ T $>$::intToString (unsigned long int {\em n})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyPlotter_a3901644f0e38b620ebe2c02b2198aa23}
+
+
+Converts an integer to a string. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em n}]The integer to convert to string. \end{DoxyParams}
+\hypertarget{classHyPlotter_acb107c1c3cf44bb32b900c329830fdfd}{
+\index{HyPlotter@{HyPlotter}!save@{save}}
+\index{save@{save}!HyPlotter@{HyPlotter}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf HyPlotter}$<$ T $>$::save (std::string {\em pFolder})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHyPlotter_acb107c1c3cf44bb32b900c329830fdfd}
+
+
+Save the data in files. In case of a time dependent solution (several VectorXd), suffixes will be written for the name of the files. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pFolder}]The folder to save files in. \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHyPlotter_a9aa282a34786a8d215a28b43816a2e6c}{
+\index{HyPlotter@{HyPlotter}!aData@{aData}}
+\index{aData@{aData}!HyPlotter@{HyPlotter}}
+\subsubsection[{aData}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std::vector$<$Eigen::VectorXd$>$ {\bf HyPlotter}$<$ T $>$::{\bf aData}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyPlotter_a9aa282a34786a8d215a28b43816a2e6c}
+The values corresponding to each point of the mesh \hypertarget{classHyPlotter_a7ff236b2b02b1ee33554d0c2d483ca83}{
+\index{HyPlotter@{HyPlotter}!aFileName@{aFileName}}
+\index{aFileName@{aFileName}!HyPlotter@{HyPlotter}}
+\subsubsection[{aFileName}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std::string {\bf HyPlotter}$<$ T $>$::{\bf aFileName}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyPlotter_a7ff236b2b02b1ee33554d0c2d483ca83}
+The name of the file to save in \hypertarget{classHyPlotter_add8bc0e65fe86f1e8efb025afd679f70}{
+\index{HyPlotter@{HyPlotter}!aMesh@{aMesh}}
+\index{aMesh@{aMesh}!HyPlotter@{HyPlotter}}
+\subsubsection[{aMesh}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf HyMesh2D}$<$T$>$ {\bf HyPlotter}$<$ T $>$::{\bf aMesh}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classHyPlotter_add8bc0e65fe86f1e8efb025afd679f70}
+The mesh 
 
 The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
 \item 
 \hyperlink{HyPlotter_8hpp}{HyPlotter.hpp}\item 
-HyPlotter.ipp\end{DoxyCompactItemize}
+\hyperlink{HyPlotter_8ipp}{HyPlotter.ipp}\end{DoxyCompactItemize}

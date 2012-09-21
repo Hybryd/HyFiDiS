@@ -1,2 +1,8 @@
 \form#0:$ \Delta u = f $
 \form#1:$ \partial_t u - \kappa\Delta u = f $
+\form#2:$ -\eta \Delta \emph{u} + \Nabla p = \emph{f}$
+\form#3:$\Omega$
+\form#4:$ div(\emph{u}) = 0$
+\form#5:$\emph{u}=g$
+\form#6:$\partial\Omega$
+\form#7:$ -\eta \Delta \emph{u} + \nabla p = \emph{f}$

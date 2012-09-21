@@ -63,7 +63,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00036"></a>00036 {
 <a name="l00037"></a>00037 <span class="keyword">protected</span>:
 <a name="l00039"></a><a class="code" href="classHyProblem.html#a245270926a69fef2df91e3aad939fee3">00039</a>   <a class="code" href="classHyDomain.html">HyDomain&lt;T&gt;</a>                 &amp; <a class="code" href="classHyProblem.html#a245270926a69fef2df91e3aad939fee3">aDomain</a>;
-<a name="l00041"></a><a class="code" href="classHyProblem.html#af7a46447af3592758cb384ac355a30fd">00041</a>   <a class="code" href="classHyBoundary.html" title="Define the border of the domain for a given problem. It is represented by a function...">HyBoundary&lt;T&gt;</a>               &amp; <a class="code" href="classHyProblem.html#af7a46447af3592758cb384ac355a30fd">aBoundary</a>;
+<a name="l00041"></a><a class="code" href="classHyProblem.html#af7a46447af3592758cb384ac355a30fd">00041</a>   <a class="code" href="classHyBoundary.html" title="Defines the border of the domain for a given problem. It is represented by a function...">HyBoundary&lt;T&gt;</a>               &amp; <a class="code" href="classHyProblem.html#af7a46447af3592758cb384ac355a30fd">aBoundary</a>;
 <a name="l00043"></a><a class="code" href="classHyProblem.html#a370a94346e3e688f352f60ff1e8ba1ab">00043</a>   <a class="code" href="classHyMesh2D.html" title="Two dimensional mesh.">HyMesh2D&lt;T&gt;</a>                 &amp; <a class="code" href="classHyProblem.html#a370a94346e3e688f352f60ff1e8ba1ab">aMesh</a>;
 <a name="l00045"></a><a class="code" href="classHyProblem.html#a9ff58aa13598c448222203cbb0ad6a10">00045</a>   std::string                 &amp; <a class="code" href="classHyProblem.html#a9ff58aa13598c448222203cbb0ad6a10">aDescription</a>;
 <a name="l00046"></a>00046 
@@ -75,9 +75,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00056"></a>00056   
 <a name="l00057"></a>00057 <span class="keyword">public</span>:
 <a name="l00058"></a>00058   <a class="code" href="classHyProblem.html#adc400712e624ef7107837a200082106a" title="Default constructor.">HyProblem</a>();
-<a name="l00059"></a>00059   <a class="code" href="classHyProblem.html#adc400712e624ef7107837a200082106a" title="Default constructor.">HyProblem</a>(<a class="code" href="classHyDomain.html">HyDomain&lt;T&gt;</a> &amp; pDomain, <a class="code" href="classHyBoundary.html" title="Define the border of the domain for a given problem. It is represented by a function...">HyBoundary&lt;T&gt;</a> &amp; pBoundary, <a class="code" href="classHyMesh2D.html" title="Two dimensional mesh.">HyMesh2D&lt;T&gt;</a> &amp; pMesh, std::string &amp; pDescription);
+<a name="l00059"></a>00059   <a class="code" href="classHyProblem.html#adc400712e624ef7107837a200082106a" title="Default constructor.">HyProblem</a>(<a class="code" href="classHyDomain.html">HyDomain&lt;T&gt;</a> &amp; pDomain, <a class="code" href="classHyBoundary.html" title="Defines the border of the domain for a given problem. It is represented by a function...">HyBoundary&lt;T&gt;</a> &amp; pBoundary, <a class="code" href="classHyMesh2D.html" title="Two dimensional mesh.">HyMesh2D&lt;T&gt;</a> &amp; pMesh, std::string &amp; pDescription);
 <a name="l00060"></a>00060   
-<a name="l00061"></a>00061   <a class="code" href="classHyBoundary.html" title="Define the border of the domain for a given problem. It is represented by a function...">HyBoundary&lt;T&gt;</a>               &amp; getBoundary()     {<span class="keywordflow">return</span> <a class="code" href="classHyProblem.html#af7a46447af3592758cb384ac355a30fd">aBoundary</a>;}
+<a name="l00061"></a>00061   <a class="code" href="classHyBoundary.html" title="Defines the border of the domain for a given problem. It is represented by a function...">HyBoundary&lt;T&gt;</a>               &amp; getBoundary()     {<span class="keywordflow">return</span> <a class="code" href="classHyProblem.html#af7a46447af3592758cb384ac355a30fd">aBoundary</a>;}
 <a name="l00062"></a>00062   std::string                 &amp; getDescription()  {<span class="keywordflow">return</span> <a class="code" href="classHyProblem.html#a9ff58aa13598c448222203cbb0ad6a10">aDescription</a>;}
 <a name="l00063"></a>00063   <a class="code" href="classHyDomain.html">HyDomain&lt;T&gt;</a>                 &amp; getDomain()       {<span class="keywordflow">return</span> <a class="code" href="classHyProblem.html#a245270926a69fef2df91e3aad939fee3">aDomain</a>;}
 <a name="l00064"></a>00064   <a class="code" href="classHyMesh2D.html" title="Two dimensional mesh.">HyMesh2D&lt;T&gt;</a>                 &amp; getMesh()         {<span class="keywordflow">return</span> <a class="code" href="classHyProblem.html#a370a94346e3e688f352f60ff1e8ba1ab">aMesh</a>;}
@@ -86,7 +86,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00067"></a>00067   Eigen::VectorXd             &amp; getF()            {<span class="keywordflow">return</span> <a class="code" href="classHyProblem.html#a9c31ddb647141522c68ce12c1fc0036b">aF</a>;}
 <a name="l00068"></a>00068   Eigen::VectorXd             &amp; getG()            {<span class="keywordflow">return</span> <a class="code" href="classHyProblem.html#a3426083f6fd97b687b72b6656db0a224">aG</a>;}
 <a name="l00069"></a>00069   
-<a name="l00070"></a>00070   <span class="keywordtype">void</span>                          setBoundary(<a class="code" href="classHyBoundary.html" title="Define the border of the domain for a given problem. It is represented by a function...">HyBoundary&lt;T&gt;</a> &amp; lB) {<a class="code" href="classHyProblem.html#af7a46447af3592758cb384ac355a30fd">aBoundary</a> = lB;}
+<a name="l00070"></a>00070   <span class="keywordtype">void</span>                          setBoundary(<a class="code" href="classHyBoundary.html" title="Defines the border of the domain for a given problem. It is represented by a function...">HyBoundary&lt;T&gt;</a> &amp; lB) {<a class="code" href="classHyProblem.html#af7a46447af3592758cb384ac355a30fd">aBoundary</a> = lB;}
 <a name="l00071"></a>00071   <span class="keywordtype">void</span>                          setX(Eigen::VectorXd pVector) {<a class="code" href="classHyProblem.html#ad08883fb8ad06aadda0302fc387433cf">aX</a> = pVector;}
 <a name="l00072"></a>00072     
 <a name="l00073"></a>00073 <span class="comment">//  void applySolution();</span>
@@ -127,7 +127,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address style="text-align: right;"><small>Generated on Sat Sep 1 10:01:49 2012 by&nbsp;
+<hr class="footer"/><address style="text-align: right;"><small>Generated on Fri Sep 21 19:08:20 2012 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
 </body>

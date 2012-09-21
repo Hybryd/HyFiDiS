@@ -45,29 +45,142 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <h1>HyPlotter&lt; T &gt; Class Template Reference</h1><!-- doxytag: class="HyPlotter" -->
+<p>This class is used for post-processing analysis. Given a <a class="el" href="classHyMesh.html">HyMesh</a> and a set of data, it saves the solution in a file.  
+<a href="#_details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="HyPlotter_8hpp_source.html">HyPlotter.hpp</a>&gt;</code></p>
+
 <p><a href="classHyPlotter-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50b452f5b5747d4505e2e9e85943fbd1"></a><!-- doxytag: member="HyPlotter::HyPlotter" ref="a50b452f5b5747d4505e2e9e85943fbd1" args="()" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHyPlotter.html#a50b452f5b5747d4505e2e9e85943fbd1">HyPlotter</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Default constructor of <a class="el" href="classHyPlotter.html" title="This class is used for post-processing analysis. Given a HyMesh and a set of data...">HyPlotter</a>. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace9cd6b9ea3082dc8e31f5b6461deb6b"></a><!-- doxytag: member="HyPlotter::HyPlotter" ref="ace9cd6b9ea3082dc8e31f5b6461deb6b" args="(HyMesh2D&lt; T &gt; pMesh, std::vector&lt; Eigen::VectorXd &gt; pData, std::string pFileName)" -->
 &nbsp;</td><td class="memItemRight" valign="bottom"><b>HyPlotter</b> (<a class="el" href="classHyMesh2D.html">HyMesh2D</a>&lt; T &gt; pMesh, std::vector&lt; Eigen::VectorXd &gt; pData, std::string pFileName)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3901644f0e38b620ebe2c02b2198aa23"></a><!-- doxytag: member="HyPlotter::intToString" ref="a3901644f0e38b620ebe2c02b2198aa23" args="(unsigned long int n)" -->
-std::string&nbsp;</td><td class="memItemRight" valign="bottom"><b>intToString</b> (unsigned long int n)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb107c1c3cf44bb32b900c329830fdfd"></a><!-- doxytag: member="HyPlotter::save" ref="acb107c1c3cf44bb32b900c329830fdfd" args="(std::string pFolder)" -->
-void&nbsp;</td><td class="memItemRight" valign="bottom"><b>save</b> (std::string pFolder)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHyPlotter.html#a3901644f0e38b620ebe2c02b2198aa23">intToString</a> (unsigned long int n)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts an integer to a string.  <a href="#a3901644f0e38b620ebe2c02b2198aa23"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHyPlotter.html#acb107c1c3cf44bb32b900c329830fdfd">save</a> (std::string pFolder)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Save the data in files. In case of a time dependent solution (several VectorXd), suffixes will be written for the name of the files.  <a href="#acb107c1c3cf44bb32b900c329830fdfd"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Protected Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add8bc0e65fe86f1e8efb025afd679f70"></a><!-- doxytag: member="HyPlotter::aMesh" ref="add8bc0e65fe86f1e8efb025afd679f70" args="" -->
-<a class="el" href="classHyMesh2D.html">HyMesh2D</a>&lt; T &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>aMesh</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9aa282a34786a8d215a28b43816a2e6c"></a><!-- doxytag: member="HyPlotter::aData" ref="a9aa282a34786a8d215a28b43816a2e6c" args="" -->
-std::vector&lt; Eigen::VectorXd &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>aData</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ff236b2b02b1ee33554d0c2d483ca83"></a><!-- doxytag: member="HyPlotter::aFileName" ref="a7ff236b2b02b1ee33554d0c2d483ca83" args="" -->
-std::string&nbsp;</td><td class="memItemRight" valign="bottom"><b>aFileName</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHyMesh2D.html">HyMesh2D</a>&lt; T &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHyPlotter.html#add8bc0e65fe86f1e8efb025afd679f70">aMesh</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; Eigen::VectorXd &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHyPlotter.html#a9aa282a34786a8d215a28b43816a2e6c">aData</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHyPlotter.html#a7ff236b2b02b1ee33554d0c2d483ca83">aFileName</a></td></tr>
 </table>
+<hr/><a name="_details"></a><h2>Detailed Description</h2>
 <h3>template&lt;typename T&gt;<br/>
  class HyPlotter&lt; T &gt;</h3>
 
+<p>This class is used for post-processing analysis. Given a <a class="el" href="classHyMesh.html">HyMesh</a> and a set of data, it saves the solution in a file. </p>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a3901644f0e38b620ebe2c02b2198aa23"></a><!-- doxytag: member="HyPlotter::intToString" ref="a3901644f0e38b620ebe2c02b2198aa23" args="(unsigned long int n)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classHyPlotter.html">HyPlotter</a>&lt; T &gt;::intToString </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long int&nbsp;</td>
+          <td class="paramname"> <em>n</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Converts an integer to a string. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>n</em>&nbsp;</td><td>The integer to convert to string. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="acb107c1c3cf44bb32b900c329830fdfd"></a><!-- doxytag: member="HyPlotter::save" ref="acb107c1c3cf44bb32b900c329830fdfd" args="(std::string pFolder)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classHyPlotter.html">HyPlotter</a>&lt; T &gt;::save </td>
+          <td>(</td>
+          <td class="paramtype">std::string&nbsp;</td>
+          <td class="paramname"> <em>pFolder</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Save the data in files. In case of a time dependent solution (several VectorXd), suffixes will be written for the name of the files. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pFolder</em>&nbsp;</td><td>The folder to save files in. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a9aa282a34786a8d215a28b43816a2e6c"></a><!-- doxytag: member="HyPlotter::aData" ref="a9aa282a34786a8d215a28b43816a2e6c" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Eigen::VectorXd&gt; <a class="el" href="classHyPlotter.html">HyPlotter</a>&lt; T &gt;::<a class="el" href="classHyPlotter.html#a9aa282a34786a8d215a28b43816a2e6c">aData</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>The values corresponding to each point of the mesh </p>
+
+</div>
+</div>
+<a class="anchor" id="a7ff236b2b02b1ee33554d0c2d483ca83"></a><!-- doxytag: member="HyPlotter::aFileName" ref="a7ff236b2b02b1ee33554d0c2d483ca83" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classHyPlotter.html">HyPlotter</a>&lt; T &gt;::<a class="el" href="classHyPlotter.html#a7ff236b2b02b1ee33554d0c2d483ca83">aFileName</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>The name of the file to save in </p>
+
+</div>
+</div>
+<a class="anchor" id="add8bc0e65fe86f1e8efb025afd679f70"></a><!-- doxytag: member="HyPlotter::aMesh" ref="add8bc0e65fe86f1e8efb025afd679f70" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classHyMesh2D.html">HyMesh2D</a>&lt;T&gt; <a class="el" href="classHyPlotter.html">HyPlotter</a>&lt; T &gt;::<a class="el" href="classHyPlotter.html#add8bc0e65fe86f1e8efb025afd679f70">aMesh</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>The mesh </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="HyPlotter_8hpp_source.html">HyPlotter.hpp</a></li>
-<li>HyPlotter.ipp</li>
+<li><a class="el" href="HyPlotter_8ipp.html">HyPlotter.ipp</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->
@@ -84,7 +197,7 @@ std::string&nbsp;</td><td class="memItemRight" valign="bottom"><b>aFileName</b><
 </iframe>
 </div>
 
-<hr class="footer"/><address style="text-align: right;"><small>Generated on Sat Sep 1 10:01:52 2012 by&nbsp;
+<hr class="footer"/><address style="text-align: right;"><small>Generated on Fri Sep 21 19:08:22 2012 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
 </body>

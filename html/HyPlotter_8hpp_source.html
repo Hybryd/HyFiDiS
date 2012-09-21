@@ -52,30 +52,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00016"></a>00016 
 <a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="HyMesh2D_8hpp.html">HyMesh2D.hpp</a>&quot;</span>
 <a name="l00018"></a>00018 
-<a name="l00019"></a>00019 
-<a name="l00020"></a>00020 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;
-<a name="l00021"></a><a class="code" href="classHyPlotter.html">00021</a> <span class="keyword">class </span><a class="code" href="classHyPlotter.html">HyPlotter</a>
-<a name="l00022"></a>00022 {
-<a name="l00023"></a>00023 <span class="keyword">protected</span>:
-<a name="l00024"></a>00024   <a class="code" href="classHyMesh2D.html" title="Two dimensional mesh.">HyMesh2D&lt;T&gt;</a>                     aMesh;
-<a name="l00025"></a>00025   std::vector&lt;Eigen::VectorXd&gt;    aData;
-<a name="l00026"></a>00026   std::string                     aFileName;
-<a name="l00027"></a>00027 
-<a name="l00028"></a>00028 <span class="keyword">public</span>:
-<a name="l00029"></a>00029   <a class="code" href="classHyPlotter.html">HyPlotter</a>();
-<a name="l00030"></a>00030   <a class="code" href="classHyPlotter.html">HyPlotter</a>(<a class="code" href="classHyMesh2D.html" title="Two dimensional mesh.">HyMesh2D&lt;T&gt;</a> pMesh, std::vector&lt;Eigen::VectorXd&gt; pData, std::string pFileName);
-<a name="l00031"></a>00031   
-<a name="l00032"></a>00032   std::string intToString(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> n);
-<a name="l00033"></a>00033   
-<a name="l00034"></a>00034   <span class="keywordtype">void</span> save(std::string pFolder);
-<a name="l00035"></a>00035 
+<a name="l00026"></a>00026 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;
+<a name="l00027"></a><a class="code" href="classHyPlotter.html">00027</a> <span class="keyword">class </span><a class="code" href="classHyPlotter.html" title="This class is used for post-processing analysis. Given a HyMesh and a set of data...">HyPlotter</a>
+<a name="l00028"></a>00028 {
+<a name="l00029"></a>00029 <span class="keyword">protected</span>:
+<a name="l00031"></a><a class="code" href="classHyPlotter.html#add8bc0e65fe86f1e8efb025afd679f70">00031</a>   <a class="code" href="classHyMesh2D.html" title="Two dimensional mesh.">HyMesh2D&lt;T&gt;</a>                     <a class="code" href="classHyPlotter.html#add8bc0e65fe86f1e8efb025afd679f70">aMesh</a>;
+<a name="l00033"></a><a class="code" href="classHyPlotter.html#a9aa282a34786a8d215a28b43816a2e6c">00033</a>   std::vector&lt;Eigen::VectorXd&gt;    <a class="code" href="classHyPlotter.html#a9aa282a34786a8d215a28b43816a2e6c">aData</a>;
+<a name="l00035"></a><a class="code" href="classHyPlotter.html#a7ff236b2b02b1ee33554d0c2d483ca83">00035</a>   std::string                     <a class="code" href="classHyPlotter.html#a7ff236b2b02b1ee33554d0c2d483ca83">aFileName</a>;
 <a name="l00036"></a>00036 
-<a name="l00037"></a>00037 };
-<a name="l00038"></a>00038 
-<a name="l00039"></a>00039 
-<a name="l00040"></a>00040 <span class="preprocessor">#include &quot;HyPlotter.ipp&quot;</span>
-<a name="l00041"></a>00041 
-<a name="l00042"></a>00042 <span class="preprocessor">#endif</span>
+<a name="l00037"></a>00037 <span class="keyword">public</span>:
+<a name="l00038"></a>00038   <a class="code" href="classHyPlotter.html#a50b452f5b5747d4505e2e9e85943fbd1" title="Default constructor of HyPlotter.">HyPlotter</a>();
+<a name="l00039"></a>00039   <a class="code" href="classHyPlotter.html#a50b452f5b5747d4505e2e9e85943fbd1" title="Default constructor of HyPlotter.">HyPlotter</a>(<a class="code" href="classHyMesh2D.html" title="Two dimensional mesh.">HyMesh2D&lt;T&gt;</a> pMesh, std::vector&lt;Eigen::VectorXd&gt; pData, std::string pFileName);
+<a name="l00040"></a>00040   
+<a name="l00041"></a>00041   std::string <a class="code" href="classHyPlotter.html#a3901644f0e38b620ebe2c02b2198aa23" title="Converts an integer to a string.">intToString</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> n);
+<a name="l00042"></a>00042   
+<a name="l00043"></a>00043   <span class="keywordtype">void</span> <a class="code" href="classHyPlotter.html#acb107c1c3cf44bb32b900c329830fdfd" title="Save the data in files. In case of a time dependent solution (several VectorXd),...">save</a>(std::string pFolder);
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046 };
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049 <span class="preprocessor">#include &quot;<a class="code" href="HyPlotter_8ipp.html" title="Template file of HyPlotter class.">HyPlotter.ipp</a>&quot;</span>
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 <span class="preprocessor">#endif</span>
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -91,7 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address style="text-align: right;"><small>Generated on Sat Sep 1 10:01:49 2012 by&nbsp;
+<hr class="footer"/><address style="text-align: right;"><small>Generated on Fri Sep 21 19:08:20 2012 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
 </body>
