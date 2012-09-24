@@ -21,9 +21,15 @@ template <typename T>
 HyPoisson2D<T>::HyPoisson2D(  HyDomain<T> & pDomain,
                               HyBoundary<T> & pBoundary,
                               HyMesh2D<T> & pMesh,
-                              std::string & pDescription
-                           ) : HyProblem<T>(pDomain,pBoundary,pMesh,pDescription)
+                              std::string & pDescription ): HyProblem<T>(pDomain,pBoundary,pMesh,pDescription)
 {
+  this->aMatrix((this->aMesh.getNbRectanglesX()+1)*(this->aMesh.getNbRectanglesY()+1),(this->aMesh.getNbRectanglesX()+1)*(this->aMesh.getNbRectanglesY()+1));
+  this->aX((this->aMesh.getNbRectanglesX()+1)*(this->aMesh.getNbRectanglesY()+1));
+  this->aF((this->aMesh.getNbRectanglesX()+1)*(this->aMesh.getNbRectanglesY()+1));
+  this->aG((this->aMesh.getNbRectanglesX()+1)*(this->aMesh.getNbRectanglesY()+1));
+  this->aMatrix.reserve(VectorXi::Constant((this->aMesh.getNbRectanglesX()+1)*(this->aMesh.getNbRectanglesY()+1),5)); // ===NOMBRE DE VOISINS CHANGE EN 3D
+  for(unsigned long int i=0;i<this->aMatrix.innerSize();++i)
+    this->aMatrix.coeffRef(i,i)=1;
   build();
 }
 

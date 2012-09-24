@@ -1,8 +1,33 @@
+/*!
+*
+* \file   HyPlotter.ipp
+* \brief  Template file of HyPlotter class.
+*
+*/
+
+
+/*!
+*
+* \fn HyPlotter<T>::HyPlotter()
+* \brief Default constructor of HyPlotter.
+*
+*/
 template <typename T>
 HyPlotter<T>::HyPlotter()
 {
 
 }
+
+/*!
+*
+* \fn HyPlotter<T>::HyPlotter(std::string pDescription)
+* \brief Constructor of HyPlotter.
+* \param pMesh The mesh corresponding to the problem.
+* \param pData The solution.
+* \param pFileName The name of the output file.
+*
+*/
+
 
 template <typename T>
 HyPlotter<T>::HyPlotter(HyMesh2D<T> pMesh, std::vector<Eigen::VectorXd> pData, std::string pFileName) : aMesh(pMesh), aFileName(pFileName)
@@ -13,6 +38,14 @@ HyPlotter<T>::HyPlotter(HyMesh2D<T> pMesh, std::vector<Eigen::VectorXd> pData, s
   }
 }
 
+/*!
+*
+* \fn std::string  HyPlotter<T>::intToString(unsigned long int n)
+* \brief Converts an integer to a string.
+* \param n The integer to convert to string.
+*
+*/
+
 template <typename T>
 std::string  HyPlotter<T>::intToString(unsigned long int n)
 {
@@ -21,6 +54,13 @@ std::string  HyPlotter<T>::intToString(unsigned long int n)
 	return ss.str();
 }
 
+/*!
+*
+* \fn void HyPlotter<T>::save(std::string pFolder)
+* \brief Save the data in files. In case of a time dependent solution (several VectorXd), suffixes will be written for the name of the files.
+* \param pFolder The folder to save files in.
+*
+*/
 
 template <typename T>
 void HyPlotter<T>::save(std::string pFolder)

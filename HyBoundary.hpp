@@ -15,7 +15,7 @@
 /*!
 *
 * \class HyBoundary
-* \brief Define the border of the domain for a given problem. It is represented by a function, defined in the whole space, which value is positive inside the domain, 0 exactly on the boundary, and negative outside. This class is virtual.
+* \brief Defines the border of the domain for a given problem. It is represented by a function, defined in the whole space, which value is positive inside the domain, 0 exactly on the boundary, and negative outside. This class is virtual.
 *
 */
 

@@ -16,13 +16,22 @@
 
 #include "HyMesh2D.hpp"
 
+/*!
+*
+* \class HyPlotter
+* \brief This class is used for post-processing analysis. Given a HyMesh and a set of data, it saves the solution in a file.
+*
+*/
 
 template <typename T>
 class HyPlotter
 {
 protected:
+  /*! The mesh */
   HyMesh2D<T>                     aMesh;
+  /*! The values corresponding to each point of the mesh */
   std::vector<Eigen::VectorXd>    aData;
+  /*! The name of the file to save in */
   std::string                     aFileName;
 
 public:

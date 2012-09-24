@@ -50,7 +50,6 @@ HyProblem<T>::HyProblem(HyDomain<T> & pDomain,
   aMatrix.reserve(VectorXi::Constant((aMesh.getNbRectanglesX()+1)*(aMesh.getNbRectanglesY()+1),5)); // ===NOMBRE DE VOISINS CHANGE EN 3D
   for(unsigned long int i=0;i<aMatrix.innerSize();++i)
     aMatrix.coeffRef(i,i)=1;
-  //build();
 }
 
 
